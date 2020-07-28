@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5064d3f201db92f409fdce13c02a5182, type: 3}
+  m_Name: A3
+  m_EditorClassIdentifier: 
+  noteSound: {fileID: 8300000, guid: 5b54e9222e1bfaf418e795f08e63b64f, type: 3}
+  noteName: A
+  ID: 121
+  isInKeys:
+  - C/Am
+  - G/Em
+  - D/Bm
+  - A/F#m
+  - E/C#m
+  - F/Dm
+  - 'Bb/Gm '
