@@ -15,6 +15,7 @@ TagManager:
   - Settings
   - Rate
   - Popupmanager
+  - Score
   layers:
   - Default
   - TransparentFX

@@ -7,6 +7,7 @@ public class PopupManager : MonoBehaviour
     public UIPopup ratePopup;
     public UIPopup shopPopup;
     public UIPopup settingsPopup;
+    public UIPopup scorePopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
 
@@ -106,6 +107,20 @@ public class PopupManager : MonoBehaviour
     }
 
     public void CloseSettingsPopup()
+    {
+        settingsPopup.Hide();
+    }
+
+    public void OpenScorePopup()
+    {
+        if (scorePopup == null)
+        {
+            scorePopup = GameObject.FindWithTag("Score").GetComponent<UIPopup>();
+        }
+        scorePopup.Show();
+    }
+
+    public void CloseScorePopup()
     {
         settingsPopup.Hide();
     }
