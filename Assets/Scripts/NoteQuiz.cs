@@ -31,6 +31,7 @@ public class NoteQuiz : MonoBehaviour
     public static string answer;
     public static int answerLength;
     public bool useTimer;
+    public static int notesLeft;
 
     public static bool RoundIsFinished => userInput.Length >= answerLength || !answer.Contains(userInput) || wrongOrder == true;
 
@@ -44,10 +45,16 @@ public class NoteQuiz : MonoBehaviour
         userInput = string.Empty;
         wrongOrder = false;
         countTimer.timeLeft = 0;
+        useTimer = false;
         if (quizText == null)
         {
             quizText = GameObject.FindWithTag("Quiztext").GetComponent<TextMeshProUGUI>();
         }
+    }
+
+    public void UseTimer()
+    {
+        useTimer = true;
     }
 
     public void PlayGame()
@@ -67,6 +74,7 @@ public class NoteQuiz : MonoBehaviour
                 }
             }
         }
+        notesLeft = gameManager.level;
         if (gameManager.level == 1)
         {
             quizText.text = "Find the note";

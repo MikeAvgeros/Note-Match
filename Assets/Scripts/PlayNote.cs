@@ -76,6 +76,10 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
                 OnUserInput?.Invoke();
                 CheckOrderofAnswer();
                 OnColorChange?.Invoke();
+                if (NoteQuiz.answer.Contains(NoteQuiz.userInput) && !NoteQuiz.wrongOrder)
+                {
+                    NoteQuiz.notesLeft--;
+                }
                 if (NoteQuiz.RoundIsFinished)
                 {
                     noteQuiz.RegisterAnswer();
