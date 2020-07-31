@@ -19,10 +19,6 @@ public class PopupManager : MonoBehaviour
     private IEnumerator ShowLevelSelectionPopup()
     {
         yield return new WaitForSeconds(0.1f);
-        if (levelSelectionPopup == null)
-        {
-            levelSelectionPopup = GameObject.FindWithTag("Level").GetComponent<UIPopup>();
-        }
         levelSelectionPopup.Show();
     }
 
@@ -46,10 +42,6 @@ public class PopupManager : MonoBehaviour
     private IEnumerator ShowScaleSelectionPopup()
     {
         yield return new WaitForSeconds(1f);
-        if (scaleSelectionPopup == null)
-        {
-            scaleSelectionPopup = GameObject.FindWithTag("Scale").GetComponent<UIPopup>();
-        }
         scaleSelectionPopup.Show();
     }
 
@@ -71,10 +63,6 @@ public class PopupManager : MonoBehaviour
 
     public void OpenShopPopup()
     {
-        if (shopPopup == null)
-        {
-            shopPopup = GameObject.FindWithTag("Shop").GetComponent<UIPopup>();
-        }
         shopPopup.Show();
     }
 
@@ -85,10 +73,6 @@ public class PopupManager : MonoBehaviour
 
     public void OpenRatePopup()
     {
-        if (ratePopup == null)
-        {
-            ratePopup = GameObject.FindWithTag("Rate").GetComponent<UIPopup>();
-        }
         ratePopup.Show();
     }
 
@@ -99,10 +83,6 @@ public class PopupManager : MonoBehaviour
 
     public void OpenSettingsPopup()
     {
-        if (settingsPopup == null)
-        {
-            settingsPopup = GameObject.FindWithTag("Settings").GetComponent<UIPopup>();
-        }
         settingsPopup.Show();
     }
 
@@ -113,10 +93,6 @@ public class PopupManager : MonoBehaviour
 
     public void OpenScorePopup()
     {
-        if (scorePopup == null)
-        {
-            scorePopup = GameObject.FindWithTag("Score").GetComponent<UIPopup>();
-        }
         scorePopup.Show();
     }
 

@@ -23,10 +23,6 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     {
         audioPoolManager = AudioPoolManager.instance;
         gameManager = GameManager.instance;
-        if (noteQuiz = null)
-        {
-            noteQuiz = GameObject.FindWithTag("Notequiz").GetComponent<NoteQuiz>();
-        }
     }
 
     private void Play()
@@ -48,17 +44,9 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
 
     private IEnumerator QuizText()
     {
-        if (quizTextPopup == null)
-        {
-            quizTextPopup = GameObject.FindWithTag("Quiztextpopup").GetComponent<UIPopup>();
-        }
-        if (quizText == null)
-        {
-            quizText = GameObject.FindWithTag("Quiztext").GetComponent<TextMeshProUGUI>();
-        }
         quizTextPopup.Show();
         quizText.text = noteData.noteName + " is not in " + gameManager.scale;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         quizTextPopup.Hide();
         quizText.text = string.Empty;
     }

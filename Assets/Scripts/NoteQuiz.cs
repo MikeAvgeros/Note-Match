@@ -48,14 +48,6 @@ public class NoteQuiz : MonoBehaviour
         wrongOrder = false;
         countTimer.timeLeft = 0;
         useTimer = false;
-        if (quizTextPopup == null)
-        {
-            quizTextPopup = GameObject.FindWithTag("Quiztextpopup").GetComponent<UIPopup>();
-        }
-        if (quizText == null)
-        {
-            quizText = GameObject.FindWithTag("Quiztext").GetComponent<TextMeshProUGUI>();
-        }
     }
 
     public void UseTimer()
@@ -151,7 +143,7 @@ public class NoteQuiz : MonoBehaviour
             GetNotes();
             StartCoroutine(PlayNotes());
             GetAnswer();
-            yield return playDelay;
+            yield return new WaitForSeconds(1f);
             quizTextPopup.Hide();
             quizText.text = string.Empty;
         }
@@ -263,7 +255,7 @@ public class NoteQuiz : MonoBehaviour
     {
         quizTextPopup.Show();
         quizText.text = "Well Done!";
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         quizTextPopup.Hide();
         quizText.text = string.Empty;
     }

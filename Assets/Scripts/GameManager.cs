@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     public UnityAction onPointsChanged;
     public static GameManager instance;
     public static GameManager Instance { get { return instance; } }
-    public int currentScore, bestScore;
+    public int currentScore;
+    public int bestScore;
     public int gamePoints;
     public int level;
     public string scale;
