@@ -5,6 +5,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Doozy.Engine.UI;
 
 public class NoteQuiz : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class NoteQuiz : MonoBehaviour
     public Transform audioPoolManagerTransform;
     public TextMeshProUGUI quizText;
     public static CountTimer countTimer;
+    public UIPopup quizTextPopup;
     public static string userInput;
     public static bool gameActive;
     public static string currentRoundNotesID;
@@ -75,6 +77,7 @@ public class NoteQuiz : MonoBehaviour
             }
         }
         notesLeft = gameManager.level;
+        quizTextPopup.Show();
         if (gameManager.level == 1)
         {
             quizText.text = "Find the note";
@@ -127,6 +130,7 @@ public class NoteQuiz : MonoBehaviour
             audioPoolManager.StopNoteSound(audioSource);
         }
         countTimer.timerHasStarted = false;
+        quizTextPopup.Show();
         quizText.text = "Time's up." + " Game Has Finished";
         yield return new WaitForSeconds(1f);
         ResetRound();
@@ -143,6 +147,8 @@ public class NoteQuiz : MonoBehaviour
             GetNotes();
             StartCoroutine(PlayNotes());
             GetAnswer();
+            yield return playDelay;
+            quizTextPopup.Hide();
             quizText.text = string.Empty;
         }
     }
@@ -251,8 +257,10 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator WellDoneText()
     {
+        quizTextPopup.Show();
         quizText.text = "Well Done!";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        quizTextPopup.Hide();
         quizText.text = string.Empty;
     }
 
@@ -277,6 +285,7 @@ public class NoteQuiz : MonoBehaviour
         {
             currentRoundNotesName += currentRoundNote.name + " ";
         }
+        quizTextPopup.Show();
         if (gameManager.level == 1)
         {
             quizText.text = "The correct note is " + currentRoundNote.name;
@@ -285,7 +294,8 @@ public class NoteQuiz : MonoBehaviour
         {
             quizText.text = "The correct notes are " + currentRoundNotesName;
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        quizTextPopup.Hide();
         quizText.text = string.Empty;
     }
 
