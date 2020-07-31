@@ -48,6 +48,10 @@ public class NoteQuiz : MonoBehaviour
         wrongOrder = false;
         countTimer.timeLeft = 0;
         useTimer = false;
+        if (quizTextPopup == null)
+        {
+            quizTextPopup = GameObject.FindWithTag("Quiztextpopup").GetComponent<UIPopup>();
+        }
         if (quizText == null)
         {
             quizText = GameObject.FindWithTag("Quiztext").GetComponent<TextMeshProUGUI>();

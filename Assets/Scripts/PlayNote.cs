@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 using System.Collections;
+using Doozy.Engine.UI;
 
 public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDragHandler
 {
@@ -11,6 +12,7 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     public TextMeshProUGUI quizText;
     private AudioPoolManager audioPoolManager;
     private GameManager gameManager;
+    public UIPopup quizTextPopup;
     public delegate void UpdateColor();
     public static event UpdateColor OnColorChange;
     public delegate void UserInput();
@@ -21,8 +23,10 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     {
         audioPoolManager = AudioPoolManager.instance;
         gameManager = GameManager.instance;
-        noteQuiz = GameObject.FindWithTag("Notequiz").GetComponent<NoteQuiz>();
-        quizText = GameObject.FindWithTag("Quiztext").GetComponent<TextMeshProUGUI>();
+        if (noteQuiz = null)
+        {
+            noteQuiz = GameObject.FindWithTag("Notequiz").GetComponent<NoteQuiz>();
+        }
     }
 
     private void Play()
@@ -44,14 +48,19 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
 
     private IEnumerator QuizText()
     {
+        if (quizTextPopup == null)
+        {
+            quizTextPopup = GameObject.FindWithTag("Quiztextpopup").GetComponent<UIPopup>();
+        }
         if (quizText == null)
         {
             quizText = GameObject.FindWithTag("Quiztext").GetComponent<TextMeshProUGUI>();
         }
+        quizTextPopup.Show();
         quizText.text = noteData.noteName + " is not in " + gameManager.scale;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        quizTextPopup.Hide();
         quizText.text = string.Empty;
-
     }
 
     public void OnDrag(PointerEventData eventData)
