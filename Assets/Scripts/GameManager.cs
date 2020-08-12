@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Doozy.Engine.UI;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class GameManager : MonoBehaviour
     public UnityAction onPointsChanged;
     public static GameManager instance;
     public static GameManager Instance { get { return instance; } }
+    public UIPopup gameOverPopup;
+    public GameObject gameOverObject;
     public int currentScore;
     public int bestScore;
     public int gamePoints;
@@ -30,6 +33,13 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("points", gamePoints);
         PlayerPrefs.SetInt("level", level);
         PlayerPrefs.SetString("scale", scale);
+        gameOverObject.SetActive(false);
+    }
+
+    private void Start()
+    {
+        CloseGameOverPopup();
+        gameOverObject.SetActive(false);
     }
 
     public void UpdateScore(int s)
@@ -70,6 +80,17 @@ public class GameManager : MonoBehaviour
     {
         scale = s;
         PlayerPrefs.SetString("scale", scale);
+    }
+
+    public void OpenGameOverPopup()
+    {
+        gameOverObject.SetActive(true);
+        gameOverPopup.Show();
+    }
+
+    public void CloseGameOverPopup()
+    {
+        gameOverPopup.Hide();
     }
 
     public void QuitApplication()

@@ -128,14 +128,15 @@ namespace Doozy.Engine.UI
         {
             if (DatabaseContains(CanvasName))
             {
-                DDebug.LogError(
-                               "Error duplicate UICanvas found. " +
-                               "You cannot have multiple UICanvases with the same canvas name. " +
-                               "This error originated from the UICanvas component attached to the " + name + " gameObject. " +
-                               "The duplicate canvas name is '" + CanvasName + "'.",
-                               this);
+                //DDebug.LogError(
+                //"Error duplicate UICanvas found. " +
+                //"You cannot have multiple UICanvases with the same canvas name. " +
+                //"This error originated from the UICanvas component attached to the " + name + " gameObject. " +
+                //"The duplicate canvas name is '" + CanvasName + "'.",
+                //this);
 
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
+                Destroy(gameObject);
                 return;
             }
 

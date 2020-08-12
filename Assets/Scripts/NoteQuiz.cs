@@ -4,8 +4,8 @@ using TMPro;
 using UnityEngine;
 using System;
 using System.Linq;
-using UnityEngine.SceneManagement;
 using Doozy.Engine.UI;
+using UnityEngine.SceneManagement;
 
 public class NoteQuiz : MonoBehaviour
 {
@@ -135,8 +135,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator PlayRandomNote()
     {
-        var playDelay = new WaitForSeconds(0.5f);
-        yield return playDelay;
+        yield return new WaitForSeconds(0.5f);
         if (playableNotes.Count > 0 && currentRoundAnswerIDList.Count == 0)
         {
             GameActive();
@@ -300,7 +299,8 @@ public class NoteQuiz : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         gameManager.UpdateBestScore();
         gameManager.ResetScore();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameManager.OpenGameOverPopup();
     }
 }
