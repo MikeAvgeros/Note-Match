@@ -5,14 +5,12 @@ using UnityEngine.Events;
 public class GameManager : MonoBehaviour
 {
     public UnityAction onScoreChanged;
-    public UnityAction onPointsChanged;
     public static GameManager instance;
     public static GameManager Instance { get { return instance; } }
     public UIPopup gameOverPopup;
     public GameObject gameOverObject;
     public int currentScore;
     public int bestScore;
-    public int gamePoints;
     public int level;
     public string scale;
 
@@ -30,7 +28,6 @@ public class GameManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("score", currentScore);
         PlayerPrefs.SetInt("bestscore", bestScore);
-        PlayerPrefs.SetInt("points", gamePoints);
         PlayerPrefs.SetInt("level", level);
         PlayerPrefs.SetString("scale", scale);
         gameOverObject.SetActive(false);
@@ -47,13 +44,6 @@ public class GameManager : MonoBehaviour
         currentScore += s;
         PlayerPrefs.SetInt("score", currentScore);
         onScoreChanged?.Invoke();
-    }
-
-    public void UpdatePoints(int p)
-    {
-        gamePoints += p;
-        PlayerPrefs.SetInt("points", gamePoints);
-        onPointsChanged?.Invoke();
     }
 
     public void UpdateBestScore()
@@ -91,6 +81,7 @@ public class GameManager : MonoBehaviour
     public void CloseGameOverPopup()
     {
         gameOverPopup.Hide();
+        ResetScore();
     }
 
     public void QuitApplication()

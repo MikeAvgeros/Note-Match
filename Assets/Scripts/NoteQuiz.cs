@@ -229,7 +229,6 @@ public class NoteQuiz : MonoBehaviour
 
     public void ReplayNotes()
     {
-        gameManager.UpdatePoints(-10);
         StartCoroutine(PlayNotes());
     }
 
@@ -239,11 +238,9 @@ public class NoteQuiz : MonoBehaviour
         {
             StartCoroutine(WellDoneText());
             gameManager.UpdateScore(gameManager.level * 1);
-            gameManager.UpdatePoints(gameManager.level * 10);
         }
         else
         {
-            gameManager.UpdatePoints(-10);
             StartCoroutine(ShowCorrectAnswer());
             StartCoroutine(GameOver());
         }
@@ -296,10 +293,8 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator GameOver()
     {
-        yield return new WaitForSeconds(0.5f);
         gameManager.UpdateBestScore();
-        gameManager.ResetScore();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameManager.OpenGameOverPopup();
     }
