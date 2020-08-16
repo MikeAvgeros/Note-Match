@@ -10,7 +10,10 @@ public class DisplayScore : MonoBehaviour
     private void Start()
     {
         gameManager = GameManager.instance;
-        gameManager.onScoreChanged += ShowScore;
+    }
+
+    private void Update()
+    {
         ShowScore();
     }
 
@@ -18,27 +21,19 @@ public class DisplayScore : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("score"))
         {
-            currentScore.text = "Your current score is " + gameManager.currentScore.ToString();
+            currentScore.text = gameManager.currentScore.ToString();
         }
         else
         {
-            currentScore.text = "Your current score is 0";
+            currentScore.text = "0";
         }
         if (PlayerPrefs.HasKey("bestscore"))
         {
-            if (gameManager.bestScore > 0 && gameManager.bestScore < gameManager.currentScore)
-            {
-                currentScore.text = string.Empty;
-                bestScore.text = "Congratulations! " + gameManager.bestScore.ToString() + " is your best score";
-            }
-            else if (gameManager.bestScore > 0 && gameManager.bestScore > gameManager.currentScore)
-            {
-                bestScore.text = "Your best score is " + gameManager.bestScore.ToString();
-            }
+            bestScore.text = gameManager.bestScore.ToString();
         }
         else
         {
-            bestScore.text = string.Empty;
+            bestScore.text = "0";
         }
     }
 }

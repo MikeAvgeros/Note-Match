@@ -1,10 +1,8 @@
 ﻿using Doozy.Engine.UI;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-    public UnityAction onScoreChanged;
     public static GameManager instance;
     public static GameManager Instance { get { return instance; } }
     public UIPopup gameOverPopup;
@@ -43,7 +41,6 @@ public class GameManager : MonoBehaviour
     {
         currentScore += s;
         PlayerPrefs.SetInt("score", currentScore);
-        onScoreChanged?.Invoke();
     }
 
     public void UpdateBestScore()

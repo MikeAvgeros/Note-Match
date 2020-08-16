@@ -53,6 +53,8 @@ public class NoteQuiz : MonoBehaviour
     public void UseTimer()
     {
         useTimer = true;
+        quizTextPopup.Show();
+        quizText.text = "Timer enabled";
     }
 
     public void PlayGame()
