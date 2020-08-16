@@ -118,10 +118,10 @@ public class NoteQuiz : MonoBehaviour
       {
          yield return null;
       }
-      StartCoroutine(TimesUp());
+      TimesUp();
     }
 
-    private IEnumerator TimesUp()
+    private void TimesUp()
     {
         foreach (AudioSource audioSource in audioPoolManager.audioSourcePool)
         {
@@ -129,8 +129,7 @@ public class NoteQuiz : MonoBehaviour
         }
         countTimer.timerHasStarted = false;
         quizTextPopup.Show();
-        quizText.text = "Time's up." + " Game Has Finished";
-        yield return new WaitForSeconds(1f);
+        quizText.text = "Time's up.";
         ResetRound();
         StartCoroutine(GameOver());
     }
@@ -144,9 +143,6 @@ public class NoteQuiz : MonoBehaviour
             GetNotes();
             StartCoroutine(PlayNotes());
             GetAnswer();
-            yield return new WaitForSeconds(1f);
-            quizTextPopup.Hide();
-            quizText.text = string.Empty;
         }
     }
 
@@ -238,24 +234,21 @@ public class NoteQuiz : MonoBehaviour
     {
         if (userInput == answer)
         {
-            StartCoroutine(WellDoneText());
+            WellDoneText();
             gameManager.UpdateScore(gameManager.level * 1);
         }
         else
         {
-            StartCoroutine(ShowCorrectAnswer());
+            ShowCorrectAnswer();
             StartCoroutine(GameOver());
         }
         ResetRound();
     }
 
-    private IEnumerator WellDoneText()
+    private void WellDoneText()
     {
         quizTextPopup.Show();
         quizText.text = "Well Done!";
-        yield return new WaitForSeconds(1.5f);
-        quizTextPopup.Hide();
-        quizText.text = string.Empty;
     }
 
     private void ResetRound()
@@ -273,7 +266,7 @@ public class NoteQuiz : MonoBehaviour
         }
     }
 
-    private IEnumerator ShowCorrectAnswer()
+    private void ShowCorrectAnswer()
     {
         foreach (NoteData currentRoundNote in currentRoundNotes)
         {
@@ -288,16 +281,13 @@ public class NoteQuiz : MonoBehaviour
         {
             quizText.text = "The correct notes are " + currentRoundNotesName;
         }
-        yield return new WaitForSeconds(2f);
-        quizTextPopup.Hide();
-        quizText.text = string.Empty;
     }
 
     private IEnumerator GameOver()
     {
-        gameManager.UpdateBestScore();
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameManager.UpdateBestScore();
         gameManager.OpenGameOverPopup();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

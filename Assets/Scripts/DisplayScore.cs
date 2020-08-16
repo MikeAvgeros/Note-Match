@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class DisplayScore : MonoBehaviour
@@ -10,30 +11,30 @@ public class DisplayScore : MonoBehaviour
     private void Start()
     {
         gameManager = GameManager.instance;
+        StartCoroutine(ShowScore());
     }
 
-    private void Update()
+    private IEnumerator ShowScore()
     {
-        ShowScore();
-    }
-
-    private void ShowScore()
-    {
-        if (PlayerPrefs.HasKey("score"))
+        while (true)
         {
-            currentScore.text = gameManager.currentScore.ToString();
-        }
-        else
-        {
-            currentScore.text = "0";
-        }
-        if (PlayerPrefs.HasKey("bestscore"))
-        {
-            bestScore.text = gameManager.bestScore.ToString();
-        }
-        else
-        {
-            bestScore.text = "0";
+            if (PlayerPrefs.HasKey("score"))
+            {
+                currentScore.text = gameManager.currentScore.ToString();
+            }
+            else
+            {
+                currentScore.text = "0";
+            }
+            if (PlayerPrefs.HasKey("bestscore"))
+            {
+                bestScore.text = gameManager.bestScore.ToString();
+            }
+            else
+            {
+                bestScore.text = "0";
+            }
+            yield return null;
         }
     }
 }

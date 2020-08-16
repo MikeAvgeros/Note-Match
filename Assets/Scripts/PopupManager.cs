@@ -7,7 +7,6 @@ public class PopupManager : MonoBehaviour
     public UIPopup ratePopup;
     public UIPopup shopPopup;
     public UIPopup settingsPopup;
-    public UIPopup scorePopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
 
@@ -89,11 +88,6 @@ public class PopupManager : MonoBehaviour
     public void CloseSettingsPopup()
     {
         settingsPopup.Hide();
-    }
-
-    public void OpenScorePopup()
-    {
-        scorePopup.Show();
     }
 
     public void CloseScorePopup()

@@ -17,6 +17,7 @@ TagManager:
   - Popupmanager
   - Score
   - Quiztextpopup
+  - Bestscore
   layers:
   - Default
   - TransparentFX
