@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CountTimer : MonoBehaviour
 {
-    public int originalTime;
-    public int timeLeft;
+    public int startTime;
+    public int timeSpent;
     public bool timerHasStarted = false;
-    public Transform roundedTimer;
+    //public Transform roundedTimer;
 
     public void StartTimer()
     {
-        StartCoroutine(Timer());
         timerHasStarted = true;
+        StartCoroutine(Timer());
     }
 
     public void StopTimer()
@@ -21,28 +20,14 @@ public class CountTimer : MonoBehaviour
         timerHasStarted = false;
     }
 
-    private void Update()
-    {
-        if (timeLeft < 0)
-        {
-            timeLeft = 0;
-            RestartTimer();
-        }
-    }
-
-    public void RestartTimer()
-    {
-        timeLeft = originalTime;
-        roundedTimer.GetComponent<Image>().fillAmount = 1f;
-    }
-
     private IEnumerator Timer()
     {
         while (true)
         {
+            if (timerHasStarted)
             yield return new WaitForSeconds(1f);
-            timeLeft--;
-            roundedTimer.GetComponent<Image>().fillAmount -= 1f / originalTime;
+            timeSpent++;
+            //roundedTimer.GetComponent<Image>().fillAmount -= 1f / originalTime;
             yield return null;
         }
     }

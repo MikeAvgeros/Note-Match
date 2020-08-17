@@ -46,7 +46,6 @@ public class NoteQuiz : MonoBehaviour
         answer = string.Empty;
         userInput = string.Empty;
         wrongOrder = false;
-        countTimer.timeLeft = 0;
         useTimer = false;
     }
 
@@ -64,7 +63,7 @@ public class NoteQuiz : MonoBehaviour
         {
             currentRoundNotes.Clear();
         }
-        if (playableNotes == null || playableNotes.Count == 0)
+        if (playableNotes == null || playableNotes.Count < gameManager.level)
         {
             foreach (NoteData noteData in notesList)
             {
@@ -87,12 +86,12 @@ public class NoteQuiz : MonoBehaviour
         StartCoroutine(PlayRandomNote());
         if (useTimer == true)
         {
-            StartCoroutine(CheckTimer());
-            if (countTimer.timeLeft > 0)
-            {
-                return;
-            }
-            countTimer.RestartTimer();
+           // StartCoroutine(CheckTimer());
+            //if (countTimer.timeSpent > 0)
+            //{
+               // return;
+            //}
+            //countTimer.RestartTimer();
             countTimer.StartTimer();
         }
     }
@@ -104,6 +103,7 @@ public class NoteQuiz : MonoBehaviour
         answer = string.Empty;
         userInput = string.Empty;
         wrongOrder = false;
+        countTimer.timeSpent = 0;
     }
 
     private void GameActive()
@@ -112,27 +112,27 @@ public class NoteQuiz : MonoBehaviour
         notesToPlay = 0;
     }
 
-    private IEnumerator CheckTimer()
-    {
-      while (gameActive == false || gameActive == true && countTimer.timeLeft > 0)
-      {
-         yield return null;
-      }
-      TimesUp();
-    }
+    //private IEnumerator CheckTimer()
+    //{
+      //while (gameActive == false || gameActive == true && countTimer.timeSpent > 0)
+      //{
+        // yield return null;
+     // }
+      //TimesUp();
+    //}
 
-    private void TimesUp()
-    {
-        foreach (AudioSource audioSource in audioPoolManager.audioSourcePool)
-        {
-            audioPoolManager.StopNoteSound(audioSource);
-        }
-        countTimer.timerHasStarted = false;
-        quizTextPopup.Show();
-        quizText.text = "Time's up.";
-        ResetRound();
-        StartCoroutine(GameOver());
-    }
+    //private void TimesUp()
+    //{
+        //foreach (AudioSource audioSource in audioPoolManager.audioSourcePool)
+        //{
+            //audioPoolManager.StopNoteSound(audioSource);
+       // }
+       // countTimer.timerHasStarted = false;
+       // quizTextPopup.Show();
+        //quizText.text = "Time's up.";
+        //ResetRound();
+       // StartCoroutine(GameOver());
+   // }
 
     private IEnumerator PlayRandomNote()
     {
@@ -253,6 +253,7 @@ public class NoteQuiz : MonoBehaviour
 
     private void ResetRound()
     {
+        countTimer.StopTimer();
         audioPoolManager.audioSourcePool.Clear();
         currentRoundAnswerIDList.Clear();
         NoteLabel.userInputList.Clear();
