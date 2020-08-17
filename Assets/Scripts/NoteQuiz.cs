@@ -216,7 +216,7 @@ public class NoteQuiz : MonoBehaviour
         if (userInput == answer)
         {
             WellDoneText();
-            gameManager.UpdateScore(gameManager.level * 1);
+            gameManager.UpdateScore(gameManager.level * gameManager.level);
         }
         else
         {

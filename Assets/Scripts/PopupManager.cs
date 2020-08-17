@@ -21,7 +21,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         levelSelectionPopup.Hide();
     }
 
@@ -38,13 +38,13 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator ShowScaleSelectionPopup()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         scaleSelectionPopup.Show();
     }
 
     private IEnumerator CloseScaleSelectionPopup()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         scaleSelectionPopup.Hide();
     }
 

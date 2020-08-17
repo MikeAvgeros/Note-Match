@@ -1,4 +1,5 @@
 ﻿using Doozy.Engine.UI;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -77,8 +78,14 @@ public class GameManager : MonoBehaviour
 
     public void CloseGameOverPopup()
     {
-        gameOverPopup.Hide();
+        StartCoroutine(CloseGameOver());
         ResetScore();
+    }
+
+    private IEnumerator CloseGameOver()
+    {
+        yield return new WaitForSeconds(0.5f);
+        gameOverPopup.Hide();
     }
 
     public void QuitApplication()
