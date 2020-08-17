@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PopupManager : MonoBehaviour
 {
-    public UIPopup ratePopup;
-    public UIPopup shopPopup;
     public UIPopup settingsPopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
@@ -17,7 +15,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator ShowLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         levelSelectionPopup.Show();
     }
 
@@ -60,38 +58,25 @@ public class PopupManager : MonoBehaviour
         StartCoroutine(CloseScaleSelectionPopup());
     }
 
-    public void OpenShopPopup()
-    {
-        shopPopup.Show();
-    }
-
-    public void CloseShopPopup()
-    {
-        shopPopup.Hide();
-    }
-
-    public void OpenRatePopup()
-    {
-        ratePopup.Show();
-    }
-
-    public void CloseRatePopup()
-    {
-        ratePopup.Hide();
-    }
-
     public void OpenSettingsPopup()
     {
+        StartCoroutine(OpenSettings());
+    }
+
+    private IEnumerator OpenSettings()
+    {
+        yield return new WaitForSeconds(0.5f);
         settingsPopup.Show();
     }
 
     public void CloseSettingsPopup()
     {
-        settingsPopup.Hide();
+        StartCoroutine(CloseSettings());
     }
 
-    public void CloseScorePopup()
+    private IEnumerator CloseSettings()
     {
+        yield return new WaitForSeconds(0.5f);
         settingsPopup.Hide();
     }
 }
