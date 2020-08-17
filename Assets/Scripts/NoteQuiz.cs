@@ -18,8 +18,10 @@ public class NoteQuiz : MonoBehaviour
     private AudioPoolManager audioPoolManager;
     public Transform audioPoolManagerTransform;
     public TextMeshProUGUI quizText;
+    public TextMeshProUGUI resultText;
     public static CountTimer countTimer;
     public UIPopup quizTextPopup;
+    public UIPopup resultTextPopup;
     public static string userInput;
     public static bool gameActive;
     public static string currentRoundNotesID;
@@ -51,9 +53,15 @@ public class NoteQuiz : MonoBehaviour
 
     public void UseTimer()
     {
-        useTimer = true;
+        if (useTimer == false)
+            useTimer = true;
+        else
+            useTimer = false;
         quizTextPopup.Show();
-        quizText.text = "Timer enabled";
+        if (useTimer == true)
+            quizText.text = "Timer enabled";
+        else
+            quizText.text = "Timer disabled";
     }
 
     public void PlayGame()
@@ -74,6 +82,7 @@ public class NoteQuiz : MonoBehaviour
             }
         }
         notesLeft = gameManager.level;
+        resultTextPopup.Hide();
         quizTextPopup.Show();
         if (gameManager.level == 1)
         {
@@ -86,12 +95,6 @@ public class NoteQuiz : MonoBehaviour
         StartCoroutine(PlayRandomNote());
         if (useTimer == true)
         {
-           // StartCoroutine(CheckTimer());
-            //if (countTimer.timeSpent > 0)
-            //{
-               // return;
-            //}
-            //countTimer.RestartTimer();
             countTimer.StartTimer();
         }
     }
@@ -111,28 +114,6 @@ public class NoteQuiz : MonoBehaviour
         gameActive = true;
         notesToPlay = 0;
     }
-
-    //private IEnumerator CheckTimer()
-    //{
-      //while (gameActive == false || gameActive == true && countTimer.timeSpent > 0)
-      //{
-        // yield return null;
-     // }
-      //TimesUp();
-    //}
-
-    //private void TimesUp()
-    //{
-        //foreach (AudioSource audioSource in audioPoolManager.audioSourcePool)
-        //{
-            //audioPoolManager.StopNoteSound(audioSource);
-       // }
-       // countTimer.timerHasStarted = false;
-       // quizTextPopup.Show();
-        //quizText.text = "Time's up.";
-        //ResetRound();
-       // StartCoroutine(GameOver());
-   // }
 
     private IEnumerator PlayRandomNote()
     {
@@ -247,8 +228,8 @@ public class NoteQuiz : MonoBehaviour
 
     private void WellDoneText()
     {
-        quizTextPopup.Show();
-        quizText.text = "Well Done!";
+        resultTextPopup.Show();
+        resultText.text = "Well Done!" + "\n" + "Play again";
     }
 
     private void ResetRound()
@@ -273,14 +254,14 @@ public class NoteQuiz : MonoBehaviour
         {
             currentRoundNotesName += currentRoundNote.name + " ";
         }
-        quizTextPopup.Show();
+        resultTextPopup.Show();
         if (gameManager.level == 1)
         {
-            quizText.text = "The correct note is " + currentRoundNote.name;
+            resultText.text = "The correct note is " + currentRoundNote.name;
         }
         else
         {
-            quizText.text = "The correct notes are " + currentRoundNotesName;
+            resultText.text = "The correct notes are " + currentRoundNotesName;
         }
     }
 
