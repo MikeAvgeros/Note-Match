@@ -48,7 +48,7 @@ public class NoteQuiz : MonoBehaviour
         answer = string.Empty;
         userInput = string.Empty;
         wrongOrder = false;
-        useTimer = false;
+        useTimer = true;
     }
 
     public void UseTimer()
@@ -86,14 +86,14 @@ public class NoteQuiz : MonoBehaviour
         quizTextPopup.Show();
         if (gameManager.level == 1)
         {
-            quizText.text = "Find the note";
+            quizText.text = "Find the note" + "\n" + "and swipe up";
         }
         else
         {
-            quizText.text = "Find the notes";
+            quizText.text = "Find the notes" + "\n" + "and swipe up";
         }
         StartCoroutine(PlayRandomNote());
-        if (useTimer == true)
+        if (useTimer == true && countTimer.timeSpent == 0)
         {
             countTimer.StartTimer();
         }
