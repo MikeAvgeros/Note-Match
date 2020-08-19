@@ -5,10 +5,16 @@ public class CountTimer : MonoBehaviour
     public float startTime;
     public float currentTime;
     public bool timerGoing = false;
+    private NoteQuiz noteQuiz;
+
+    private void Start()
+    {
+        noteQuiz = GetComponent<NoteQuiz>();
+    }
 
     private void Update()
     {
-        if (timerGoing)
+        if (timerGoing && noteQuiz.canStartTimer)
         {
             Timer();
         }

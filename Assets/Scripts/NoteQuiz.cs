@@ -36,6 +36,7 @@ public class NoteQuiz : MonoBehaviour
     public static string answer;
     public static int answerLength;
     public static int notesLeft;
+    public bool canStartTimer;
 
     public static bool RoundIsFinished => userInput.Length >= answerLength || !answer.Contains(userInput) || wrongOrder == true;
 
@@ -90,6 +91,7 @@ public class NoteQuiz : MonoBehaviour
         userInput = string.Empty;
         wrongOrder = false;
         countTimer.RestartTimer();
+        canStartTimer = false;
     }
 
     private void GameActive()
@@ -107,6 +109,7 @@ public class NoteQuiz : MonoBehaviour
             GetNotes();
             StartCoroutine(PlayNotes());
             GetAnswer();
+            StartCoroutine(CanStartTimer());
         }
     }
 
@@ -173,6 +176,12 @@ public class NoteQuiz : MonoBehaviour
         answerLength = AnswerLength(currentRoundNotesID);
         Answer = GetAnswerName;
         answer = Answer(currentRoundNotesID);
+    }
+
+    private IEnumerator CanStartTimer()
+    {
+        yield return new WaitForSeconds(gameManager.level);
+        canStartTimer = true;
     }
 
     private int GetAnswerLength(string answer)
