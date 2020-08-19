@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int bestScore;
     public int level;
     public string scale;
+    public bool newBestScore;
 
     private void Awake()
     {
@@ -36,6 +37,18 @@ public class GameManager : MonoBehaviour
     {
         CloseGameOverPopup();
         gameOverObject.SetActive(false);
+    }
+
+    public void CheckForBestScore()
+    {
+        if (currentScore > bestScore)
+        {
+            newBestScore = true;
+        }
+        else
+        {
+            newBestScore = false;
+        }
     }
 
     public void UpdateScore(int s)
@@ -79,13 +92,15 @@ public class GameManager : MonoBehaviour
     public void CloseGameOverPopup()
     {
         StartCoroutine(CloseGameOver());
-        ResetScore();
     }
 
     private IEnumerator CloseGameOver()
     {
+        UpdateBestScore();
         yield return new WaitForSeconds(0.5f);
         gameOverPopup.Hide();
+        yield return new WaitForSeconds(0.5f);
+        ResetScore();
     }
 
     public void QuitApplication()

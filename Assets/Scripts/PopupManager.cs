@@ -5,6 +5,7 @@ using UnityEngine;
 public class PopupManager : MonoBehaviour
 {
     public UIPopup settingsPopup;
+    public UIPopup tutorialPopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
 
@@ -75,6 +76,28 @@ public class PopupManager : MonoBehaviour
     }
 
     private IEnumerator CloseSettings()
+    {
+        yield return new WaitForSeconds(0.5f);
+        settingsPopup.Hide();
+    }
+
+    public void OpenTutorialPopup()
+    {
+        StartCoroutine(OpenTutorial());
+    }
+
+    private IEnumerator OpenTutorial()
+    {
+        yield return new WaitForSeconds(0.5f);
+        settingsPopup.Show();
+    }
+
+    public void CloseTutorialPopup()
+    {
+        StartCoroutine(CloseTutorial());
+    }
+
+    private IEnumerator CloseTutorial()
     {
         yield return new WaitForSeconds(0.5f);
         settingsPopup.Hide();

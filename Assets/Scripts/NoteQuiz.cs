@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using Doozy.Engine.UI;
 using UnityEngine.SceneManagement;
+using System.Net.Http.Headers;
 
 public class NoteQuiz : MonoBehaviour
 {
@@ -118,10 +119,6 @@ public class NoteQuiz : MonoBehaviour
             currentRoundNotes.Add(currentRoundNote);
             playableNotes.Remove(currentRoundNote);
             notesToPlay++;
-        }
-        foreach (NoteData currentRoundNote in currentRoundNotes)
-        {
-            Debug.Log(currentRoundNote);
         }
     }
 
@@ -250,8 +247,8 @@ public class NoteQuiz : MonoBehaviour
     private IEnumerator GameOver()
     {
         yield return new WaitForSeconds(2f);
-        gameManager.UpdateBestScore();
         gameManager.OpenGameOverPopup();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameManager.CheckForBestScore();
     }
 }

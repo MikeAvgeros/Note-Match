@@ -20,7 +20,7 @@ public class GameOverScreen : MonoBehaviour
 
     private void ShowGameOverScreen()
     {
-        if (gameManager.currentScore > gameManager.bestScore)
+        if (gameManager.newBestScore == true)
         {
             titleText.text = "New Best Score!";
         }
