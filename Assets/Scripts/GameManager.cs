@@ -1,5 +1,6 @@
 ﻿using Doozy.Engine.UI;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     public int level;
     public string scale;
     public bool newBestScore;
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI scoreText;
 
     private void Awake()
     {
@@ -39,7 +42,7 @@ public class GameManager : MonoBehaviour
         gameOverObject.SetActive(false);
     }
 
-    public void CheckForBestScore()
+    private void CheckForBestScore()
     {
         if (currentScore > bestScore)
         {
@@ -57,7 +60,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("score", currentScore);
     }
 
-    public void UpdateBestScore()
+    private void UpdateBestScore()
     {
         PlayerPrefs.SetInt("bestscore", bestScore);
         if (currentScore > bestScore)
@@ -66,7 +69,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ResetScore()
+    private void ResetScore()
     {
         currentScore = 0;
     }
@@ -83,9 +86,24 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("scale", scale);
     }
 
+    private void ShowGameOverScreen()
+    {
+        CheckForBestScore();
+        if (newBestScore == true)
+        {
+            titleText.text = "New Best Score!";
+        }
+        else
+        {
+            titleText.text = "Good Game!";
+        }
+        scoreText.text = currentScore.ToString();
+    }
+
     public void OpenGameOverPopup()
     {
         gameOverObject.SetActive(true);
+        ShowGameOverScreen();
         gameOverPopup.Show();
     }
 

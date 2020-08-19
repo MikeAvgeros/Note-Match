@@ -68567,6 +68567,8 @@ MonoBehaviour:
   level: 0
   scale: 
   newBestScore: 0
+  titleText: {fileID: 1756054878}
+  scoreText: {fileID: 228783890}
 --- !u!114 &1476102768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76915,7 +76917,6 @@ GameObject:
   - component: {fileID: 1668417821}
   - component: {fileID: 1668417820}
   - component: {fileID: 1668417818}
-  - component: {fileID: 1668417822}
   m_Layer: 0
   m_Name: GameOverPopup
   m_TagString: Score
@@ -77657,20 +77658,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1668417822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668417817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd93b7f3e4d09e946a47664580402378, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleText: {fileID: 1756054878}
-  scoreText: {fileID: 228783890}
 --- !u!1 &1670111086
 GameObject:
   m_ObjectHideFlags: 0

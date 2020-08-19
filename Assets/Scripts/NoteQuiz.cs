@@ -249,6 +249,5 @@ public class NoteQuiz : MonoBehaviour
         yield return new WaitForSeconds(2f);
         gameManager.OpenGameOverPopup();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        gameManager.CheckForBestScore();
     }
 }
