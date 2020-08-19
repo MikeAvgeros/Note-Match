@@ -2,24 +2,24 @@
 using TMPro;
 using UnityEngine;
 
-public class DisplayLevel : MonoBehaviour
+public class DisplayScale : MonoBehaviour
 {
-    public TextMeshProUGUI level;
+    public TextMeshProUGUI scale;
     private GameManager gameManager;
 
     private void Start()
     {
         gameManager = GameManager.instance;
-        StartCoroutine(ShowLevel());
+        StartCoroutine(ShowScale());
     }
 
-    private IEnumerator ShowLevel()
+    private IEnumerator ShowScale()
     {
         while (true)
         {
-            if (PlayerPrefs.HasKey("level"))
+            if (PlayerPrefs.HasKey("scale"))
             {
-                level.text = gameManager.level.ToString();
+                scale.text = gameManager.scale.ToString();
             }
             yield return null;
         }

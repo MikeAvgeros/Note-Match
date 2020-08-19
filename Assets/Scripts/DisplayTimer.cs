@@ -5,15 +5,12 @@ using System.Collections;
 public class DisplayTimer : MonoBehaviour
 {
     private CountTimer countTimer;
-    //public GameObject timerGameObject;
-    //public GameObject roundedTimer;
     public TextMeshProUGUI timer;
 
     private void Start()
     {
         countTimer = GameObject.FindWithTag("Notequiz").GetComponent<CountTimer>();
-        //timerGameObject.SetActive(false);
-        //roundedTimer.SetActive(false);
+        timer.text = "0";
         StartCoroutine(CheckTimer());
     }
 
@@ -21,16 +18,9 @@ public class DisplayTimer : MonoBehaviour
     {
         while (true)
         {
-            if (countTimer.timerHasStarted == true)
+            if (countTimer.timerGoing)
             {
-                //timerGameObject.SetActive(true);
-                //roundedTimer.SetActive(true);
-                timer.text = countTimer.timeSpent.ToString();
-            }
-            else
-            {
-                //timerGameObject.SetActive(false);
-                //roundedTimer.SetActive(false);
+                timer.text = countTimer.currentTime.ToString("0");
             }
             yield return null;
         }

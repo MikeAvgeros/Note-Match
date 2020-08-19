@@ -34,7 +34,6 @@ public class NoteQuiz : MonoBehaviour
     public Func<string, string> Answer;
     public static string answer;
     public static int answerLength;
-    public bool useTimer;
     public static int notesLeft;
 
     public static bool RoundIsFinished => userInput.Length >= answerLength || !answer.Contains(userInput) || wrongOrder == true;
@@ -48,20 +47,6 @@ public class NoteQuiz : MonoBehaviour
         answer = string.Empty;
         userInput = string.Empty;
         wrongOrder = false;
-        useTimer = true;
-    }
-
-    public void UseTimer()
-    {
-        if (useTimer == false)
-            useTimer = true;
-        else
-            useTimer = false;
-        quizTextPopup.Show();
-        if (useTimer == true)
-            quizText.text = "Timer enabled";
-        else
-            quizText.text = "Timer disabled";
     }
 
     public void PlayGame()
@@ -93,10 +78,7 @@ public class NoteQuiz : MonoBehaviour
             quizText.text = "Find the notes" + "\n" + "and swipe up";
         }
         StartCoroutine(PlayRandomNote());
-        if (useTimer == true && countTimer.timeSpent == 0)
-        {
-            countTimer.StartTimer();
-        }
+        countTimer.StartTimer();
     }
 
     private void ResetGameValues()
@@ -106,7 +88,7 @@ public class NoteQuiz : MonoBehaviour
         answer = string.Empty;
         userInput = string.Empty;
         wrongOrder = false;
-        countTimer.timeSpent = 0;
+        countTimer.RestartTimer();
     }
 
     private void GameActive()

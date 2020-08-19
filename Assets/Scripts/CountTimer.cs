@@ -1,34 +1,36 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CountTimer : MonoBehaviour
 {
-    public int startTime;
-    public int timeSpent;
-    public bool timerHasStarted = false;
-    //public Transform roundedTimer;
+    public float startTime;
+    public float currentTime;
+    public bool timerGoing = false;
+
+    private void Update()
+    {
+        if (timerGoing)
+        {
+            Timer();
+        }
+    }
 
     public void StartTimer()
     {
-        timerHasStarted = true;
-        StartCoroutine(Timer());
+        timerGoing = true;
     }
 
     public void StopTimer()
     {
-        StopCoroutine(Timer());
-        timerHasStarted = false;
+        timerGoing = false;
     }
 
-    private IEnumerator Timer()
+    public void RestartTimer()
     {
-        while (true)
-        {
-            if (timerHasStarted)
-            yield return new WaitForSeconds(1f);
-            timeSpent++;
-            //roundedTimer.GetComponent<Image>().fillAmount -= 1f / originalTime;
-            yield return null;
-        }
+        currentTime = startTime;
+    }
+
+    private void Timer()
+    {
+        currentTime += 1 * Time.deltaTime;
     }
 }
