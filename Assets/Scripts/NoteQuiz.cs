@@ -245,11 +245,11 @@ public class NoteQuiz : MonoBehaviour
         resultTextPopup.Show();
         if (gameManager.level == 1)
         {
-            resultText.text = "The correct note is " + currentRoundNote.name;
+            resultText.text = "The note is " + currentRoundNote.name;
         }
         else
         {
-            resultText.text = "The correct notes are " + currentRoundNotesName;
+            resultText.text = "The notes are " + "\n" + currentRoundNotesName;
         }
     }
 

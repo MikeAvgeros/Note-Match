@@ -16,7 +16,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator ShowLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         levelSelectionPopup.Show();
     }
 
@@ -66,7 +66,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator OpenSettings()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         settingsPopup.Show();
     }
 
@@ -77,7 +77,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseSettings()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         settingsPopup.Hide();
     }
 
@@ -88,8 +88,8 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator OpenTutorial()
     {
-        yield return new WaitForSeconds(0.5f);
-        settingsPopup.Show();
+        yield return new WaitForSeconds(0.4f);
+        tutorialPopup.Show();
     }
 
     public void CloseTutorialPopup()
@@ -99,7 +99,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseTutorial()
     {
-        yield return new WaitForSeconds(0.5f);
-        settingsPopup.Hide();
+        yield return new WaitForSeconds(0.4f);
+        tutorialPopup.Hide();
     }
 }
