@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PopupManager : MonoBehaviour
 {
-    public UIPopup settingsPopup;
+    public UIPopup contactUsPopup;
     public UIPopup tutorialPopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
@@ -16,13 +16,13 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator ShowLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
         levelSelectionPopup.Show();
     }
 
     private IEnumerator CloseLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         levelSelectionPopup.Hide();
     }
 
@@ -39,13 +39,13 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator ShowScaleSelectionPopup()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         scaleSelectionPopup.Show();
     }
 
     private IEnumerator CloseScaleSelectionPopup()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         scaleSelectionPopup.Hide();
     }
 
@@ -59,26 +59,26 @@ public class PopupManager : MonoBehaviour
         StartCoroutine(CloseScaleSelectionPopup());
     }
 
-    public void OpenSettingsPopup()
+    public void OpenContactUsPopup()
     {
-        StartCoroutine(OpenSettings());
+        StartCoroutine(OpenContactUs());
     }
 
-    private IEnumerator OpenSettings()
+    private IEnumerator OpenContactUs()
     {
-        yield return new WaitForSeconds(0.4f);
-        settingsPopup.Show();
+        yield return new WaitForSeconds(0.2f);
+        contactUsPopup.Show();
     }
 
-    public void CloseSettingsPopup()
+    public void CloseContactUsPopup()
     {
-        StartCoroutine(CloseSettings());
+        StartCoroutine(CloseContactUs());
     }
 
-    private IEnumerator CloseSettings()
+    private IEnumerator CloseContactUs()
     {
-        yield return new WaitForSeconds(0.4f);
-        settingsPopup.Hide();
+        yield return new WaitForSeconds(0.2f);
+        contactUsPopup.Hide();
     }
 
     public void OpenTutorialPopup()
@@ -88,7 +88,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator OpenTutorial()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
         tutorialPopup.Show();
     }
 
@@ -99,7 +99,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseTutorial()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
         tutorialPopup.Hide();
     }
 }

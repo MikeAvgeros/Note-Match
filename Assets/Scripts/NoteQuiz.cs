@@ -102,7 +102,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator PlayRandomNote()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         if (playableNotes.Count > 0 && currentRoundAnswerIDList.Count == 0)
         {
             GameActive();

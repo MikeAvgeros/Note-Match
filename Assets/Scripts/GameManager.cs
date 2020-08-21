@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     public bool newBestScore;
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI scoreText;
+    public GameObject bestScoreImage;
+    public GameObject lowScoreImage;
+    public GameObject zeroScoreImage;
 
     private void Awake()
     {
@@ -92,10 +95,23 @@ public class GameManager : MonoBehaviour
         if (newBestScore == true)
         {
             titleText.text = "New Best Score!";
+            bestScoreImage.SetActive(true);
+            lowScoreImage.SetActive(false);
+            zeroScoreImage.SetActive(false);
+        }
+        else if (newBestScore == false && currentScore > 0)
+        {
+            titleText.text = "Good Game!";
+            bestScoreImage.SetActive(false);
+            lowScoreImage.SetActive(true);
+            zeroScoreImage.SetActive(false);
         }
         else
         {
-            titleText.text = "Good Game!";
+            titleText.text = "Try again!";
+            bestScoreImage.SetActive(false);
+            lowScoreImage.SetActive(false);
+            zeroScoreImage.SetActive(true);
         }
         scoreText.text = currentScore.ToString();
     }
@@ -119,6 +135,8 @@ public class GameManager : MonoBehaviour
         gameOverPopup.Hide();
         yield return new WaitForSeconds(0.5f);
         ResetScore();
+        bestScoreImage.SetActive(false);
+        lowScoreImage.SetActive(false);
     }
 
     public void QuitApplication()
