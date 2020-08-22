@@ -1,5 +1,6 @@
 ﻿using Doozy.Engine.UI;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class PopupManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class PopupManager : MonoBehaviour
     public UIPopup tutorialPopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
+    public TextMeshProUGUI contactUsMessage;
 
     private void Start()
     {
@@ -66,6 +68,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator OpenContactUs()
     {
+        contactUsMessage.text = "We want to hear your feedback";
         yield return new WaitForSeconds(0.2f);
         contactUsPopup.Show();
     }
