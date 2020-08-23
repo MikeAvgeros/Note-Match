@@ -9,9 +9,9 @@ public class MailSender : MonoBehaviour, IPointerUpHandler
     public TextMeshProUGUI emailTextData;
     public TextMeshProUGUI emailResultData;
 
-    const string kSenderEmailAddress = "mike.avgerosgmail.com";
-    //const string kSenderPassword = "MizoInteractive@63";
-    const string kReceiverEmailAddress = "mike.avgeros@gmail.com";
+    const string kSenderEmailAddress = "mizointeractive@gmail.com";
+    const string kReceiverEmailAddress = "mizointeractive@gmail.com";
+
     const string url = "https://mizointeractive.000webhostapp.com/emailer.php";
 
     public void OnPointerUp(PointerEventData eventData)
