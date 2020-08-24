@@ -37,13 +37,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("bestscore", bestScore);
         PlayerPrefs.SetInt("level", level);
         PlayerPrefs.SetString("scale", scale);
-        gameOverObject.SetActive(false);
-    }
-
-    private void Start()
-    {
-        CloseGameOverPopup();
-        gameOverObject.SetActive(false);
     }
 
     private void CheckForBestScore()
@@ -139,6 +132,7 @@ public class GameManager : MonoBehaviour
         ResetScore();
         bestScoreImage.SetActive(false);
         lowScoreImage.SetActive(false);
+        gameOverObject.SetActive(false);
     }
 
     public void QuitApplication()
