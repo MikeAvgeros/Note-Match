@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SoundySettings
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: 58ac17697d7bb9b43b2f5815863429f2, type: 2}
-  AutoKillIdleControllers: 1
+  AutoKillIdleControllers: 0
   ControllerIdleKillDuration: 20
   IdleCheckInterval: 5
   MinimumNumberOfControllers: 3
