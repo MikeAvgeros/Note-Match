@@ -15,5 +15,5 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: 58ac17697d7bb9b43b2f5815863429f2, type: 2}
   AutoKillIdleControllers: 1
   ControllerIdleKillDuration: 20
-  IdleCheckInterval: 10
+  IdleCheckInterval: 5
   MinimumNumberOfControllers: 3

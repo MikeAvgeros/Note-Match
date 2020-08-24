@@ -29,9 +29,23 @@ public class AudioPoolManager : MonoBehaviour
         Play(audioSource, note);
     }
 
+    public void PlayUISound(AudioClip audioClip)
+    {
+        var audioSource = GetAudioSource();
+        audioSource.loop = false;
+        PlayUI(audioSource, audioClip);
+    }
+
     private void Play(AudioSource audioSource, NoteData note)
     {
         audioSource.clip = note.noteSound;
+        audioSource.volume = 1f;
+        audioSource.Play();
+    }
+
+    private void PlayUI(AudioSource audioSource, AudioClip audioClip)
+    {
+        audioSource.clip = audioClip;
         audioSource.volume = 1f;
         audioSource.Play();
     }

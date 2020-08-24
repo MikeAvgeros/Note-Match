@@ -11,11 +11,6 @@ public class PopupManager : MonoBehaviour
     public UIPopup scaleSelectionPopup;
     public TextMeshProUGUI contactUsMessage;
 
-    private void Start()
-    {
-        StartCoroutine(ShowLevelSelectionPopup());
-    }
-
     private IEnumerator ShowLevelSelectionPopup()
     {
         yield return new WaitForSeconds(0.2f);

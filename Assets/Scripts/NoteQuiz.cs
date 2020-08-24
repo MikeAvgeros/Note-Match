@@ -6,7 +6,6 @@ using System;
 using System.Linq;
 using Doozy.Engine.UI;
 using UnityEngine.SceneManagement;
-using System.Net.Http.Headers;
 
 public class NoteQuiz : MonoBehaviour
 {
@@ -53,34 +52,52 @@ public class NoteQuiz : MonoBehaviour
 
     public void PlayGame()
     {
-        ResetGameValues();
-        if (currentRoundNotes != null)
-        {
-            currentRoundNotes.Clear();
-        }
-        if (playableNotes == null || playableNotes.Count < gameManager.level)
-        {
-            foreach (NoteData noteData in notesList)
-            {
-                if (noteData.isInKeys.Contains(gameManager.scale))
-                {
-                    playableNotes.Add(noteData);
-                }
-            }
-        }
-        notesLeft = gameManager.level;
         resultTextPopup.Hide();
         quizTextPopup.Show();
-        if (gameManager.level == 1)
+        if (gameManager.level == 0 || gameManager.scale == null)
         {
-            quizText.text = "Find the note" + "\n" + "and swipe up";
+            quizText.text = "Please choose a level and scale";
+            return;
         }
-        else
+        if (gameActive == false)
         {
-            quizText.text = "Find the notes" + "\n" + "and swipe up";
+            ResetGameValues();
+            if (currentRoundNotes != null)
+            {
+                currentRoundNotes.Clear();
+            }
+            if (playableNotes == null || playableNotes.Count < gameManager.level)
+            {
+                foreach (NoteData noteData in notesList)
+                {
+                    if (noteData.isInKeys.Contains(gameManager.scale))
+                    {
+                        playableNotes.Add(noteData);
+                    }
+                }
+            }
+            if (gameManager.level == 1)
+            {
+                quizText.text = "Find the note" + "\n" + "and swipe up";
+            }
+            else
+            {
+                quizText.text = "Find the notes" + "\n" + "and swipe up";
+            }
+            StartCoroutine(PlayRandomNote());
+            countTimer.StartTimer();
         }
-        StartCoroutine(PlayRandomNote());
-        countTimer.StartTimer();
+        else if (gameActive == true)
+        {
+            if (gameManager.level == 1)
+            {
+                quizText.text = "Game has started" + "\n" + "Press replay to repeat the note";
+            }
+            else
+            {
+                quizText.text = "Game has started" + "\n" + "Press replay to repeat the notes";
+            }
+        }
     }
 
     private void ResetGameValues()
@@ -92,6 +109,7 @@ public class NoteQuiz : MonoBehaviour
         wrongOrder = false;
         countTimer.RestartTimer();
         canStartTimer = false;
+        notesLeft = gameManager.level;
     }
 
     private void GameActive()
@@ -102,7 +120,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator PlayRandomNote()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         if (playableNotes.Count > 0 && currentRoundAnswerIDList.Count == 0)
         {
             GameActive();
@@ -196,6 +214,20 @@ public class NoteQuiz : MonoBehaviour
 
     public void ReplayNotes()
     {
+        if (gameActive == true)
+        {
+            StartCoroutine(WaitAndReplay());
+        }
+        else
+        {
+            quizTextPopup.Show();
+            quizText.text = "Press Play to start";
+        }
+    }
+
+    private IEnumerator WaitAndReplay()
+    {
+        yield return new WaitForSeconds(0.5f);
         StartCoroutine(PlayNotes());
     }
 
@@ -222,6 +254,7 @@ public class NoteQuiz : MonoBehaviour
 
     private void ResetRound()
     {
+        gameActive = false;
         countTimer.StopTimer();
         audioPoolManager.audioSourcePool.Clear();
         currentRoundAnswerIDList.Clear();

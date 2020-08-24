@@ -17,9 +17,13 @@ public class DisplayLevel : MonoBehaviour
     {
         while (true)
         {
-            if (PlayerPrefs.HasKey("level"))
+            if (PlayerPrefs.HasKey("level") && gameManager.level != 0)
             {
                 level.text = gameManager.level.ToString();
+            }
+            else
+            {
+                level.text = string.Empty;
             }
             yield return null;
         }

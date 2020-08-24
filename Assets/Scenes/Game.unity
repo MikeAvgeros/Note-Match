@@ -1191,9 +1191,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -8658,9 +8658,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -14046,9 +14046,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -16898,9 +16898,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -19351,9 +19351,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -24792,9 +24792,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -29720,8 +29720,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_39
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -42562,9 +42562,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_31
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -49808,7 +49808,7 @@ MonoBehaviour:
   AutoHideAfterShow: 1
   AutoHideAfterShowDelay: 2
   AutoSelectButtonAfterShow: 0
-  AutoSelectPreviouslySelectedButtonAfterHide: 1
+  AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
   CanvasName: MasterCanvas
   Container:
@@ -50456,7 +50456,7 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 1
-        DatabaseName: Example Alerts
+        DatabaseName: NoteMatchCustom
         SoundName: 
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
@@ -62254,7 +62254,7 @@ MonoBehaviour:
   AutoHideAfterShow: 0
   AutoHideAfterShowDelay: 3
   AutoSelectButtonAfterShow: 0
-  AutoSelectPreviouslySelectedButtonAfterHide: 1
+  AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
   CanvasName: MasterCanvas
   Container:
@@ -62897,9 +62897,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_23
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -71749,7 +71749,7 @@ MonoBehaviour:
   AutoHideAfterShow: 1
   AutoHideAfterShowDelay: 1
   AutoSelectButtonAfterShow: 0
-  AutoSelectPreviouslySelectedButtonAfterHide: 1
+  AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
   CanvasName: MasterCanvas
   Container:
@@ -76639,9 +76639,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -93946,7 +93946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to change the level and scale
+  m_text: Press to choose the level and scale
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: f2dcf029949142e28b974630369c8b4e, type: 2}
@@ -97643,9 +97643,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -108151,7 +108151,7 @@ MonoBehaviour:
   AutoHideAfterShow: 0
   AutoHideAfterShowDelay: 3
   AutoSelectButtonAfterShow: 0
-  AutoSelectPreviouslySelectedButtonAfterHide: 1
+  AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
   CanvasName: MasterCanvas
   Container:
@@ -108794,9 +108794,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_21
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Drop
@@ -109750,9 +109750,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -111580,7 +111580,7 @@ MonoBehaviour:
   AutoHideAfterShow: 0
   AutoHideAfterShowDelay: 3
   AutoSelectButtonAfterShow: 0
-  AutoSelectPreviouslySelectedButtonAfterHide: 1
+  AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
   CanvasName: MasterCanvas
   Container:
@@ -112223,9 +112223,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_25
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -113394,9 +113394,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -115765,9 +115765,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -118523,9 +118523,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -120976,9 +120976,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -123305,9 +123305,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -126056,9 +126056,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -128748,9 +128748,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -131512,8 +131512,8 @@ MonoBehaviour:
       GameEvents: []
       SoundData:
         SoundSource: 0
-        DatabaseName: General
-        SoundName: No Sound
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_39
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -134732,9 +134732,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -137393,9 +137393,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_31
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -140461,9 +140461,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -143063,9 +143063,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -145569,9 +145569,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_31
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -148141,9 +148141,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_31
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -150655,9 +150655,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -153167,9 +153167,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -155561,9 +155561,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_34
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -157368,7 +157368,7 @@ MonoBehaviour:
   AutoHideAfterShow: 0
   AutoHideAfterShowDelay: 3
   AutoSelectButtonAfterShow: 0
-  AutoSelectPreviouslySelectedButtonAfterHide: 1
+  AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
   CanvasName: MasterCanvas
   Container:
@@ -158011,9 +158011,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_16
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Drop
@@ -160253,9 +160253,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: NoteMatchCustom
+        SoundName: Notification_31
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
