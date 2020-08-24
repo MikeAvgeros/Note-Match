@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using Doozy.Engine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NoteQuiz : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class NoteQuiz : MonoBehaviour
     public static CountTimer countTimer;
     public UIPopup quizTextPopup;
     public UIPopup resultTextPopup;
+    public UIButton levelSelectButton;
+    public UIButton playButton;
+    public UIButton replayButton;
+    public AudioClip correctAnswer;
+    public AudioClip wrongAnswer;
     public static string userInput;
     public static bool gameActive;
     public static string currentRoundNotesID;
@@ -57,6 +63,7 @@ public class NoteQuiz : MonoBehaviour
         if (gameManager.level == 0 || gameManager.scale == null)
         {
             quizText.text = "Please choose a level and scale";
+            StartCoroutine(ButtonFinder(levelSelectButton));
             return;
         }
         if (gameActive == false)
@@ -89,6 +96,7 @@ public class NoteQuiz : MonoBehaviour
         }
         else if (gameActive == true)
         {
+            StartCoroutine(ButtonFinder(replayButton));
             if (gameManager.level == 1)
             {
                 quizText.text = "Game has started" + "\n" + "Press replay to repeat the note";
@@ -98,6 +106,14 @@ public class NoteQuiz : MonoBehaviour
                 quizText.text = "Game has started" + "\n" + "Press replay to repeat the notes";
             }
         }
+    }
+
+    private IEnumerator ButtonFinder(UIButton button)
+    {
+        yield return new WaitForSeconds(1.5f);
+        button.GetComponent<Image>().color = Color.red;
+        yield return new WaitForSeconds(1f);
+        button.GetComponent<Image>().color = Color.white;
     }
 
     private void ResetGameValues()
@@ -220,6 +236,7 @@ public class NoteQuiz : MonoBehaviour
         }
         else
         {
+            StartCoroutine(ButtonFinder(playButton));
             quizTextPopup.Show();
             quizText.text = "Press Play to start";
         }
@@ -235,11 +252,13 @@ public class NoteQuiz : MonoBehaviour
     {
         if (userInput == answer)
         {
+            audioPoolManager.PlayUISound(correctAnswer);
             WellDoneText();
             gameManager.UpdateScore(gameManager.level * gameManager.level);
         }
         else
         {
+            audioPoolManager.PlayUISound(wrongAnswer);
             ShowCorrectAnswer();
             StartCoroutine(GameOver());
         }
@@ -256,17 +275,8 @@ public class NoteQuiz : MonoBehaviour
     {
         gameActive = false;
         countTimer.StopTimer();
-        audioPoolManager.audioSourcePool.Clear();
         currentRoundAnswerIDList.Clear();
         NoteLabel.userInputList.Clear();
-        if (audioPoolManagerTransform == null)
-        {
-            audioPoolManagerTransform = GameObject.FindWithTag("Audiomanager").GetComponent<Transform>();
-        }
-        foreach (Transform child in audioPoolManagerTransform)
-        {
-            Destroy(child.gameObject);
-        }
     }
 
     private void ShowCorrectAnswer()

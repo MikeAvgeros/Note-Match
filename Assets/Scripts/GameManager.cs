@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int level;
     public string scale;
     public bool newBestScore;
+    public bool canPlayGOAudio = false;
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI scoreText;
     public GameObject bestScoreImage;
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour
 
     public void OpenGameOverPopup()
     {
+        canPlayGOAudio = true;
         gameOverObject.SetActive(true);
         ShowGameOverScreen();
         gameOverPopup.Show();
