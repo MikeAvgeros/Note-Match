@@ -81230,6 +81230,7 @@ GameObject:
   - component: {fileID: 1668417821}
   - component: {fileID: 1668417820}
   - component: {fileID: 1668417818}
+  - component: {fileID: 1668417822}
   m_Layer: 0
   m_Name: GameOverPopup
   m_TagString: Score
@@ -81971,6 +81972,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1668417822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668417817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4daa4f4837db541a1e76fcb4d4b0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bestScoreAudio: {fileID: 8300000, guid: 3d8e4260aa02f28419074f13585ce079, type: 3}
+  lowScoreAudio: {fileID: 8300000, guid: bff19a5798dd60c44b6cf7f3cc26fc45, type: 3}
+  zeroScoreAudio: {fileID: 8300000, guid: 57fdd98c9dd3c8741a00f6a11d8eb835, type: 3}
+  audioPoolManager: {fileID: 1315110454}
+  gameManager: {fileID: 1476102767}
 --- !u!1 &1670111086
 GameObject:
   m_ObjectHideFlags: 0
