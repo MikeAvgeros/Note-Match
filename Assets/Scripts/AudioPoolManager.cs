@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioPoolManager : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class AudioPoolManager : MonoBehaviour
     public static AudioPoolManager Instance { get { return instance; } }
 
     public List<AudioSource> audioSourcePool = new List<AudioSource>();
+
+    public AudioMixerGroup noteMixerGroup;
+
+    public AudioMixerGroup sFXMixerGroup;
 
     private void Awake()
     {
@@ -40,6 +45,7 @@ public class AudioPoolManager : MonoBehaviour
     {
         audioSource.clip = note.noteSound;
         audioSource.volume = 1f;
+        audioSource.outputAudioMixerGroup = noteMixerGroup;
         audioSource.Play();
     }
 
@@ -47,6 +53,7 @@ public class AudioPoolManager : MonoBehaviour
     {
         audioSource.clip = audioClip;
         audioSource.volume = 1f;
+        audioSource.outputAudioMixerGroup = sFXMixerGroup;
         audioSource.Play();
     }
 

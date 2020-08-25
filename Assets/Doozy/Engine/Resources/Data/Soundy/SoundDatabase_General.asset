@@ -1,34 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8907267992004936010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
-  m_Name: NoteMatchSFX_05
-  m_EditorClassIdentifier: 
-  DatabaseName: General
-  SoundName: NoteMatchSFX_05
-  IgnoreListenerPause: 1
-  Volume:
-    MinValue: 0
-    MaxValue: 0
-  Pitch:
-    MinValue: 0
-    MaxValue: 0
-  SpatialBlend: 0
-  Loop: 0
-  Mode: 0
-  ResetSequenceAfterInactiveTime: 0
-  SequenceResetTime: 5
-  Sounds:
-  - AudioClip: {fileID: 8300000, guid: 01d15e04ef36afe4eb25e46d18c6e3c4, type: 3}
-    Weight: 1
 --- !u!114 &-7708747646165277639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +145,35 @@ MonoBehaviour:
   Sounds:
   - AudioClip: {fileID: 8300000, guid: 755e6006efba6fc49b351db6510a9d87, type: 3}
     Weight: 1
+--- !u!114 &-2979368371076801332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: NoteMatchSFX_04
+  m_EditorClassIdentifier: 
+  DatabaseName: General
+  SoundName: NoteMatchSFX_04
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 32ffa199f6b6e7842ae13947bb86beed, type: 3}
+    Weight: 1
 --- !u!114 &-2091154988789389920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +282,6 @@ MonoBehaviour:
   - NoteMatchSFX_01
   - NoteMatchSFX_03
   - NoteMatchSFX_04
-  - NoteMatchSFX_05
   - NoteMatchSFX_06
   - NoteMatchSFX_07
   - NoteMatchSFX_09
@@ -297,47 +296,17 @@ MonoBehaviour:
   - {fileID: 3389048517842776089}
   - {fileID: -3249476175923697635}
   - {fileID: -4639821375178328072}
-  - {fileID: 6598148791015417557}
-  - {fileID: -8907267992004936010}
-  - {fileID: 5660279831389775447}
+  - {fileID: -2979368371076801332}
+  - {fileID: 7355120505575621709}
   - {fileID: -2091154988789389920}
   - {fileID: -1017257378773041929}
   - {fileID: 1833418401918854088}
   - {fileID: -61048682059950850}
-  - {fileID: 967292562451749885}
-  - {fileID: 5814839875356365636}
+  - {fileID: 7952800369884197313}
+  - {fileID: 8342381296743737880}
   - {fileID: -3622730537930856391}
   - {fileID: -4297119002961750427}
   - {fileID: -7708747646165277639}
---- !u!114 &967292562451749885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
-  m_Name: NoteMatchSFX_12
-  m_EditorClassIdentifier: 
-  DatabaseName: General
-  SoundName: NoteMatchSFX_12
-  IgnoreListenerPause: 1
-  Volume:
-    MinValue: 0
-    MaxValue: 0
-  Pitch:
-    MinValue: 0
-    MaxValue: 0
-  SpatialBlend: 0
-  Loop: 0
-  Mode: 0
-  ResetSequenceAfterInactiveTime: 0
-  SequenceResetTime: 5
-  Sounds:
-  - AudioClip: {fileID: 8300000, guid: 78c168775679a564699abecdd97c1075, type: 3}
-    Weight: 1
 --- !u!114 &1833418401918854088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +363,7 @@ MonoBehaviour:
   ResetSequenceAfterInactiveTime: 0
   SequenceResetTime: 5
   Sounds: []
---- !u!114 &5660279831389775447
+--- !u!114 &7355120505575621709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -423,7 +392,36 @@ MonoBehaviour:
   Sounds:
   - AudioClip: {fileID: 8300000, guid: fd875df989e84a14d843fe2fcd574364, type: 3}
     Weight: 1
---- !u!114 &5814839875356365636
+--- !u!114 &7952800369884197313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: NoteMatchSFX_12
+  m_EditorClassIdentifier: 
+  DatabaseName: General
+  SoundName: NoteMatchSFX_12
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 78c168775679a564699abecdd97c1075, type: 3}
+    Weight: 1
+--- !u!114 &8342381296743737880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,33 +449,4 @@ MonoBehaviour:
   SequenceResetTime: 5
   Sounds:
   - AudioClip: {fileID: 8300000, guid: cb471fc0c9612df4f9d938709d07f643, type: 3}
-    Weight: 1
---- !u!114 &6598148791015417557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
-  m_Name: NoteMatchSFX_04
-  m_EditorClassIdentifier: 
-  DatabaseName: General
-  SoundName: NoteMatchSFX_04
-  IgnoreListenerPause: 1
-  Volume:
-    MinValue: 0
-    MaxValue: 0
-  Pitch:
-    MinValue: 0
-    MaxValue: 0
-  SpatialBlend: 0
-  Loop: 0
-  Mode: 0
-  ResetSequenceAfterInactiveTime: 0
-  SequenceResetTime: 5
-  Sounds:
-  - AudioClip: {fileID: 8300000, guid: 32ffa199f6b6e7842ae13947bb86beed, type: 3}
     Weight: 1

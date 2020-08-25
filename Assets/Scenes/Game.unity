@@ -44988,7 +44988,7 @@ MonoBehaviour:
       SoundData:
         SoundSource: 0
         DatabaseName: General
-        SoundName: NoteMatchSFX_04
+        SoundName: NoteMatchSFX_19
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -51843,7 +51843,7 @@ MonoBehaviour:
       SoundData:
         SoundSource: 0
         DatabaseName: General
-        SoundName: NoteMatchSFX_04
+        SoundName: NoteMatchSFX_19
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -63254,6 +63254,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourcePool: []
+  noteMixerGroup: {fileID: 3477902632062649555, guid: bc155dfdccec1be4780029a8bd542de5,
+    type: 2}
+  sFXMixerGroup: {fileID: 6967684665371054609, guid: bc155dfdccec1be4780029a8bd542de5,
+    type: 2}
 --- !u!1 &1317596470
 GameObject:
   m_ObjectHideFlags: 0
@@ -72397,9 +72401,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
-        DatabaseName: General
-        SoundName: 
+        SoundSource: 0
+        DatabaseName: Example Slides
+        SoundName: Pops Up
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -81492,9 +81496,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 1
+        SoundSource: 0
         DatabaseName: General
-        SoundName: 
+        SoundName: NoteMatchSFX_04
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
