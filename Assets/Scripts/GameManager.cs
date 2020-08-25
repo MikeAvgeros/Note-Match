@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("bestscore", bestScore);
         PlayerPrefs.SetInt("level", level);
         PlayerPrefs.SetString("scale", scale);
+        gameOverObject.SetActive(false);
     }
 
     private void CheckForBestScore()

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: SoundDatabase_ExampleClicks
   m_EditorClassIdentifier: 
   DatabaseName: Example Clicks
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243778596830155478, guid: bc155dfdccec1be4780029a8bd542de5,
+    type: 2}
   SoundNames:
   - No Sound
   - Adding Machine
