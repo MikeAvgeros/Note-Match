@@ -8,6 +8,14 @@ public class MailSender : MonoBehaviour, IPointerUpHandler
 {
     public TextMeshProUGUI emailTextData;
     public TextMeshProUGUI emailResultData;
+    public AudioClip emailSuccessSFX;
+    public AudioClip emailErrorSFX;
+    private AudioPoolManager audioPoolManager;
+
+    private void Start()
+    {
+        audioPoolManager = AudioPoolManager.instance;
+    }
 
     const string kSenderEmailAddress = "mizointeractive@gmail.com";
     const string kReceiverEmailAddress = "mizointeractive@gmail.com";
@@ -40,10 +48,12 @@ public class MailSender : MonoBehaviour, IPointerUpHandler
         if (uwr.error == null)
         {
             emailResultData.text = "Email sent successfully";
+            audioPoolManager.PlayUISound(emailSuccessSFX);
         }
         else
         {
             emailResultData.text = "Error sending the email";
+            audioPoolManager.PlayUISound(emailErrorSFX);
         }
     }
 }

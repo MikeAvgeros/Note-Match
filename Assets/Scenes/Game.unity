@@ -62060,6 +62060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emailTextData: {fileID: 1769163399}
   emailResultData: {fileID: 1201066727}
+  emailSuccessSFX: {fileID: 8300000, guid: e41944b7c1715ac4e92c8f02d55acfe9, type: 3}
+  emailErrorSFX: {fileID: 8300000, guid: 11a17f92f714cfa409b0e26aa58ff77f, type: 3}
 --- !u!1 &1264184277
 GameObject:
   m_ObjectHideFlags: 0
