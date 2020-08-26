@@ -62,7 +62,7 @@ public class NoteQuiz : MonoBehaviour
         quizTextPopup.Show();
         if (gameManager.level == 0 || gameManager.scale == null)
         {
-            quizText.text = "Please choose a level and scale";
+            quizText.text = "Please choose" + "\n" + "level and scale";
             StartCoroutine(ButtonFinder(levelSelectButton));
             return;
         }
@@ -244,8 +244,17 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator WaitAndReplay()
     {
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(PlayNotes());
+        if (gameManager.currentScore > 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            StartCoroutine(PlayNotes());
+            gameManager.UpdateScore(-1);
+        }
+        else
+        {
+            quizTextPopup.Show();
+            quizText.text = "Replay not available" + "\n" + "Increase your score";
+        }
     }
 
     public void RegisterAnswer()
