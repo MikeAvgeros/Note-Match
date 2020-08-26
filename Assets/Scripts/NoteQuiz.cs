@@ -111,7 +111,7 @@ public class NoteQuiz : MonoBehaviour
     private IEnumerator ButtonFinder(UIButton button)
     {
         yield return new WaitForSeconds(1.5f);
-        button.GetComponent<Image>().color = Color.yellow;
+        button.GetComponent<Image>().color = Color.red;
         yield return new WaitForSeconds(1f);
         button.GetComponent<Image>().color = Color.white;
     }

@@ -17,6 +17,7 @@ public class KeyColor : MonoBehaviour, IEndDragHandler
         playNote = GetComponent<PlayNote>();
         gameManager = GameManager.instance;
         StartCoroutine(DisableNotes());
+        StartCoroutine(EnableAllNotes());
     }
 
     private IEnumerator DisableNotes()
@@ -34,6 +35,19 @@ public class KeyColor : MonoBehaviour, IEndDragHandler
                 alphaColor = Color.gray;
                 buttonColor.color = alphaColor;
             }
+            yield return null;
+        }
+    }
+
+    private IEnumerator EnableAllNotes()
+    {
+        while (true)
+        {
+            while (PopupManager.changingScale == false)
+            {
+                yield return null;
+            }
+            RevertColor();
             yield return null;
         }
     }

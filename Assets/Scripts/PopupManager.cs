@@ -10,6 +10,7 @@ public class PopupManager : MonoBehaviour
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
     public TextMeshProUGUI contactUsMessage;
+    public static bool changingScale = false;
 
     private IEnumerator ShowLevelSelectionPopup()
     {
@@ -48,11 +49,13 @@ public class PopupManager : MonoBehaviour
 
     public void OpenScaleSelection()
     {
+        changingScale = true;
         StartCoroutine(ShowScaleSelectionPopup());
     }
 
     public void CloseScaleSelection()
     {
+        changingScale = false;
         StartCoroutine(CloseScaleSelectionPopup());
     }
 
