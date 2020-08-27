@@ -17,7 +17,6 @@ public class NoteQuiz : MonoBehaviour
     public static List<string> currentRoundAnswerIDList = new List<string>();
     private GameManager gameManager;
     private AudioPoolManager audioPoolManager;
-    public Transform audioPoolManagerTransform;
     public TextMeshProUGUI quizText;
     public TextMeshProUGUI resultText;
     public static CountTimer countTimer;
