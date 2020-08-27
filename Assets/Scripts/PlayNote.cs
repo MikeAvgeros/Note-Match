@@ -18,6 +18,7 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     public delegate void UserInput();
     public static event UserInput OnUserInput;
     private float difference;
+    public AudioClip correctSwipe;
 
     private void Start()
     {
@@ -75,6 +76,10 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
                 OnColorChange?.Invoke();
                 if (NoteQuiz.answer.Contains(NoteQuiz.userInput) && !NoteQuiz.wrongOrder)
                 {
+                    if (!NoteQuiz.RoundIsFinished)
+                    {
+                        audioPoolManager.PlayUISound(correctSwipe);
+                    }
                     NoteQuiz.notesLeft--;
                 }
                 if (NoteQuiz.RoundIsFinished)
