@@ -106755,6 +106755,7 @@ MonoBehaviour:
   replayButton: {fileID: 2080760742386360963}
   correctAnswer: {fileID: 8300000, guid: 755e6006efba6fc49b351db6510a9d87, type: 3}
   wrongAnswer: {fileID: 8300000, guid: 126596113c6fa8644b1bf503eca3ff65, type: 3}
+  notification: {fileID: 8300000, guid: 84d75076716bec244b0feb4a96f0238c, type: 3}
   canStartTimer: 0
 --- !u!1 &2027270546298325182
 GameObject:

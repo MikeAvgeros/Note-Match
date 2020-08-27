@@ -27,6 +27,7 @@ public class NoteQuiz : MonoBehaviour
     public UIButton replayButton;
     public AudioClip correctAnswer;
     public AudioClip wrongAnswer;
+    public AudioClip notification;
     public static string userInput;
     public static bool gameActive;
     public static string currentRoundNotesID;
@@ -105,7 +106,9 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator ButtonFinder(UIButton button)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
+        audioPoolManager.PlayUISound(notification);
+        yield return new WaitForSeconds(1f);
         button.GetComponent<Image>().color = Color.red;
         yield return new WaitForSeconds(1f);
         button.GetComponent<Image>().color = Color.white;
@@ -233,7 +236,7 @@ public class NoteQuiz : MonoBehaviour
         {
             StartCoroutine(ButtonFinder(playButton));
             quizTextPopup.Show();
-            quizText.text = "Press Play to start";
+            quizText.text = "Press play to start";
         }
     }
 
