@@ -68,10 +68,6 @@ public class NoteQuiz : MonoBehaviour
         if (gameActive == false)
         {
             ResetGameValues();
-            if (currentRoundNotes != null)
-            {
-                currentRoundNotes.Clear();
-            }
             if (playableNotes == null || playableNotes.Count < gameManager.level)
             {
                 foreach (NoteData noteData in notesList)
@@ -285,6 +281,14 @@ public class NoteQuiz : MonoBehaviour
         countTimer.StopTimer();
         currentRoundAnswerIDList.Clear();
         NoteLabel.userInputList.Clear();
+        if (currentRoundNotes != null)
+        {
+            currentRoundNotes.Clear();
+        }
+        if (playableNotes != null)
+        {
+            playableNotes.Clear();
+        }
     }
 
     private void ShowCorrectAnswer()

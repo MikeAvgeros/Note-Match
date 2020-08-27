@@ -85,21 +85,21 @@ public class KeyColor : MonoBehaviour, IEndDragHandler
     {
         if (isWhite == true)
         {
-            buttonColor.color = Color.white;
+            buttonColor.color = new Color(250f/255f, 250f/255f, 250f/255f);
         }
         else
         {
-            buttonColor.color = Color.black;
+            buttonColor.color = new Color(50f/255f, 50f/255f, 50f/255f);
         }
     }
 
     public void GreenColor()
     {
-        buttonColor.color = Color.green;
+        buttonColor.color = new Color(0f/255f, 200f/255f, 0f/255f);
     }
 
     public void RedColor()
     {
-        buttonColor.color = Color.red;
+        buttonColor.color = new Color(200f/255f, 0f/255f, 0f/255f);
     }
 }
