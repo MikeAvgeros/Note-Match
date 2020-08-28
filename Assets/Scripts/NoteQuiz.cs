@@ -251,7 +251,9 @@ public class NoteQuiz : MonoBehaviour
         else
         {
             quizTextPopup.Show();
-            quizText.text = "Replay not available" + "\n" + "Increase your score";
+            quizText.text = "Replay unavailable" + "\n" + "Raise your score";
+            yield return new WaitForSeconds(0.5f);
+            audioPoolManager.PlayUISound(notification);
         }
     }
 

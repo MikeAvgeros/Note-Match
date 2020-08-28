@@ -62561,7 +62561,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.3137255, g: 0.39215687, b: 0.7830189, a: 1}
+  m_fontColor: {r: 0.19607843, g: 0.39215687, b: 0.7830189, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -62585,8 +62585,8 @@ MonoBehaviour:
   m_fontSizeMin: 50
   m_fontSizeMax: 52
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 10
   m_wordSpacing: 5
@@ -140816,7 +140816,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.3137255, g: 0.39215687, b: 0.78431374, a: 1}
+  m_fontColor: {r: 0.19607843, g: 0.39215687, b: 0.78431374, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -140840,8 +140840,8 @@ MonoBehaviour:
   m_fontSizeMin: 50
   m_fontSizeMax: 52
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 10
   m_wordSpacing: 5
