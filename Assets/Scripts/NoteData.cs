@@ -5,6 +5,7 @@ public class NoteData : ScriptableObject
 {
     public AudioClip noteSound;
     public string noteName;
+    public string octaveName;
     public int ID;
     public string[] isInKeys;
 }

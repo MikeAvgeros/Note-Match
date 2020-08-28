@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteSound: {fileID: 8300000, guid: 358aec3d03d740643a6a4e52430c30f1, type: 3}
   noteName: F
+  octaveName: F2
   ID: 105
   isInKeys:
   - C/Am

@@ -19,6 +19,7 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     public static event UserInput OnUserInput;
     private float difference;
     public AudioClip correctSwipe;
+    public AudioClip notification;
 
     private void Start()
     {
@@ -47,7 +48,9 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     {
         quizTextPopup.Show();
         quizText.text = noteData.noteName + " is not in " + gameManager.scale;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
+        audioPoolManager.PlayUISound(notification);
+        yield return new WaitForSeconds(1f);
         quizTextPopup.Hide();
         quizText.text = string.Empty;
     }

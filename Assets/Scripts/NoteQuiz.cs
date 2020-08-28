@@ -304,12 +304,12 @@ public class NoteQuiz : MonoBehaviour
     {
         foreach (NoteData currentRoundNote in currentRoundNotes)
         {
-            currentRoundNotesName += currentRoundNote.name + " ";
+            currentRoundNotesName += currentRoundNote.octaveName + " ";
         }
         resultTextPopup.Show();
         if (gameManager.level == 1)
         {
-            resultText.text = "The note is " + currentRoundNote.name;
+            resultText.text = "The note is " + currentRoundNote.octaveName;
         }
         else
         {

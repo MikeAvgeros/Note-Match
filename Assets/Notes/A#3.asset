@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: A#3
   m_EditorClassIdentifier: 
   noteSound: {fileID: 8300000, guid: 7a5345d2d8fb0ed44855700ae96efa61, type: 3}
-  noteName: A#
+  noteName: A#/Bb
+  octaveName: A#3/Bb3
   ID: 122
   isInKeys:
   - B/G#m
