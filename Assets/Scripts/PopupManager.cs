@@ -12,6 +12,11 @@ public class PopupManager : MonoBehaviour
     public TextMeshProUGUI contactUsMessage;
     public static bool changingScale = false;
 
+    private void Start()
+    {
+        OpenTutorialPopup();
+    }
+
     private IEnumerator ShowLevelSelectionPopup()
     {
         yield return new WaitForSeconds(0.2f);
