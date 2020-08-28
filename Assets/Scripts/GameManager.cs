@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public string scale;
     public bool newBestScore;
     public bool canPlayGOAudio = false;
+    public static bool gameHasStarted = false;
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI scoreText;
     public GameObject bestScoreImage;

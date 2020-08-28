@@ -14,7 +14,10 @@ public class PopupManager : MonoBehaviour
 
     private void Start()
     {
-        OpenTutorialPopup();
+        if (GameManager.gameHasStarted == false)
+        {
+            OpenTutorialPopup();
+        }
     }
 
     private IEnumerator ShowLevelSelectionPopup()
