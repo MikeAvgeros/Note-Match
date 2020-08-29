@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: G#3
   m_EditorClassIdentifier: 
   noteSound: {fileID: 8300000, guid: 0aad709b3a82e1a47975dcc1357f1ba2, type: 3}
-  noteName: G#/Ab
-  octaveName: G#3/Ab3
+  noteName: G#|Ab
+  octaveName: G#3|Ab3
   ID: 120
   isInKeys:
-  - A/F#m
-  - E/C#m
-  - B/G#m
-  - F#/D#m
-  - C#/A#m
-  - Eb/Cm
-  - Ab/Fm
-  - Db/Bbm
-  - Gb/Ebm
-  - Cb/Abm
+  - A|F#m
+  - E|C#m
+  - B|G#m
+  - F#|D#m
+  - C#|A#m
+  - Eb|Cm
+  - Ab|Fm
+  - Db|Bbm
+  - Gb|Ebm
+  - Cb|Abm

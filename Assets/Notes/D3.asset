@@ -17,10 +17,10 @@ MonoBehaviour:
   octaveName: D3
   ID: 114
   isInKeys:
-  - C/Am
-  - G/Em
-  - D/Bm
-  - A/F#m
-  - F/Dm
-  - Bb/Gm
-  - Eb/Cm
+  - C|Am
+  - G|Em
+  - D|Bm
+  - A|F#m
+  - F|Dm
+  - Bb|Gm
+  - Eb|Cm

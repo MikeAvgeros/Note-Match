@@ -17,10 +17,10 @@ MonoBehaviour:
   octaveName: G3
   ID: 119
   isInKeys:
-  - C/Am
-  - G/Em
-  - D/Bm
-  - F/Dm
-  - Bb/Gm
-  - Eb/Cm
-  - Ab/Fm
+  - C|Am
+  - G|Em
+  - D|Bm
+  - F|Dm
+  - Bb|Gm
+  - Eb|Cm
+  - Ab|Fm

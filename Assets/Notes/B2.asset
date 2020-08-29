@@ -17,12 +17,12 @@ MonoBehaviour:
   octaveName: B2
   ID: 111
   isInKeys:
-  - C/Am
-  - G/Em
-  - D/Bm
-  - A/F#m
-  - E/C#m
-  - B/G#m
-  - F#/D#m
-  - Gb/Ebm
-  - 'Cb/Abm '
+  - C|Am
+  - G|Em
+  - D|Bm
+  - A|F#m
+  - E|C#m
+  - B|G#m
+  - F#|D#m
+  - Gb|Ebm
+  - 'Cb|Abm '

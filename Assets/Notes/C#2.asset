@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: C#2
   m_EditorClassIdentifier: 
   noteSound: {fileID: 8300000, guid: 966ede7a0e553874dbb40db968e377a0, type: 3}
-  noteName: C#/Db
-  octaveName: C#2/Db2
+  noteName: C#|Db
+  octaveName: C#2|Db2
   ID: 101
   isInKeys:
-  - D/Bm
-  - A/F#m
-  - E/C#m
-  - B/G#m
-  - F#/D#m
-  - C#/A#m
-  - Ab/Fm
-  - Db/Bbm
-  - Gb/Ebm
-  - Cb/Abm
+  - D|Bm
+  - A|F#m
+  - E|C#m
+  - B|G#m
+  - F#|D#m
+  - C#|A#m
+  - Ab|Fm
+  - Db|Bbm
+  - Gb|Ebm
+  - Cb|Abm

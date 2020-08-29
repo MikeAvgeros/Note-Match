@@ -123,6 +123,7 @@ public class NoteQuiz : MonoBehaviour
         currentRoundNotesID = string.Empty;
         currentRoundNotesName = string.Empty;
         answer = string.Empty;
+        answerLength = 0;
         userInput = string.Empty;
         wrongOrder = false;
         countTimer.RestartTimer();

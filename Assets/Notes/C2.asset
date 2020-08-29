@@ -17,11 +17,11 @@ MonoBehaviour:
   octaveName: C2
   ID: 100
   isInKeys:
-  - C/Am
-  - G/Em
-  - F/Dm
-  - Bb/Gm
-  - Eb/Cm
-  - Ab/Fm
-  - Db/Bbm
-  - C#/A#m
+  - C|Am
+  - G|Em
+  - F|Dm
+  - Bb|Gm
+  - Eb|Cm
+  - Ab|Fm
+  - Db|Bbm
+  - C#|A#m

@@ -17,10 +17,10 @@ MonoBehaviour:
   octaveName: A3
   ID: 121
   isInKeys:
-  - C/Am
-  - G/Em
-  - D/Bm
-  - A/F#m
-  - E/C#m
-  - F/Dm
-  - 'Bb/Gm '
+  - C|Am
+  - G|Em
+  - D|Bm
+  - A|F#m
+  - E|C#m
+  - F|Dm
+  - Bb|Gm

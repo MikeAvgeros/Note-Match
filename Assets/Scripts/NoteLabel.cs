@@ -22,7 +22,7 @@ public class NoteLabel : MonoBehaviour, IPointerUpHandler
 
     private IEnumerator Unsubscribe()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         PlayNote.OnUserInput -= UpdateUserInput;
     }
 

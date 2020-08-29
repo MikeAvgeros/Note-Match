@@ -17,10 +17,10 @@ MonoBehaviour:
   octaveName: A2
   ID: 109
   isInKeys:
-  - C/Am
-  - G/Em
-  - D/Bm
-  - A/F#m
-  - E/C#m
-  - F/Dm
-  - 'Bb/Gm '
+  - C|Am
+  - G|Em
+  - D|Bm
+  - A|F#m
+  - E|C#m
+  - F|Dm
+  - Bb|Gm

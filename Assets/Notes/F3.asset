@@ -17,12 +17,12 @@ MonoBehaviour:
   octaveName: F3
   ID: 117
   isInKeys:
-  - C/Am
-  - F#/D#m
-  - C#/A#m
-  - F/Dm
-  - Bb/Gm
-  - Eb/Cm
-  - Ab/Fm
-  - Db/Bbm
-  - Gb/Ebm
+  - C|Am
+  - F#|D#m
+  - C#|A#m
+  - F|Dm
+  - Bb|Gm
+  - Eb|Cm
+  - Ab|Fm
+  - Db|Bbm
+  - Gb|Ebm

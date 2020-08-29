@@ -17,11 +17,11 @@ MonoBehaviour:
   octaveName: C3
   ID: 112
   isInKeys:
-  - C/Am
-  - G/Em
-  - F/Dm
-  - Bb/Gm
-  - Eb/Cm
-  - Ab/Fm
-  - Db/Bbm
-  - C#/A#m
+  - C|Am
+  - G|Em
+  - F|Dm
+  - Bb|Gm
+  - Eb|Cm
+  - Ab|Fm
+  - Db|Bbm
+  - C#|A#m
