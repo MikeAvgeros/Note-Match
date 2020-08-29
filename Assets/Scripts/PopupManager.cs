@@ -9,8 +9,12 @@ public class PopupManager : MonoBehaviour
     public UIPopup tutorialPopup;
     public UIPopup levelSelectionPopup;
     public UIPopup scaleSelectionPopup;
+    public UIPopup quizTextPopup;
+    public TextMeshProUGUI quizText;
     public TextMeshProUGUI contactUsMessage;
+    public AudioClip notification;
     public static bool changingScale = false;
+    private AudioPoolManager audioPoolManager;
 
     private void Start()
     {
@@ -18,12 +22,23 @@ public class PopupManager : MonoBehaviour
         {
             OpenTutorialPopup();
         }
+        audioPoolManager = AudioPoolManager.instance;
     }
 
     private IEnumerator ShowLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(0.2f);
-        levelSelectionPopup.Show();
+        if (NoteQuiz.gameActive == true)
+        {
+            quizTextPopup.Show();
+            quizText.text = "Can't change while game is active";
+            yield return new WaitForSeconds(0.5f);
+            audioPoolManager.PlayUISound(notification);
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.2f);
+            levelSelectionPopup.Show();
+        }
     }
 
     private IEnumerator CloseLevelSelectionPopup()

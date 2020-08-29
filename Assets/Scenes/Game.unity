@@ -160559,7 +160559,10 @@ MonoBehaviour:
   tutorialPopup: {fileID: 1264184279}
   levelSelectionPopup: {fileID: 2179291088289230809}
   scaleSelectionPopup: {fileID: 2080760740532158533}
+  quizTextPopup: {fileID: 1468038524}
+  quizText: {fileID: 2080760742171392923}
   contactUsMessage: {fileID: 1201066727}
+  notification: {fileID: 8300000, guid: 84d75076716bec244b0feb4a96f0238c, type: 3}
 --- !u!4 &4604554219819494895
 Transform:
   m_ObjectHideFlags: 0
