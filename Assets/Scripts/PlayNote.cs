@@ -49,7 +49,7 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
         quizTextPopup.Show();
         quizText.text = noteData.noteName + " is not in " + gameManager.scale;
         audioPoolManager.PlayUISound(notification);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         quizTextPopup.Hide();
         quizText.text = string.Empty;
     }
