@@ -282,7 +282,7 @@ public class NoteQuiz : MonoBehaviour
     private void WellDoneText()
     {
         resultTextPopup.Show();
-        resultText.text = "Well Done!" + "\n" + "Play again";
+        resultText.text = "Congratulations" + "\n" + "Play again";
     }
 
     private void ResetRound()
@@ -310,17 +310,17 @@ public class NoteQuiz : MonoBehaviour
         resultTextPopup.Show();
         if (gameManager.level == 1)
         {
-            resultText.text = "The note is " + currentRoundNote.octaveName;
+            resultText.text = "The correct note is " + "\n" + currentRoundNote.octaveName;
         }
         else
         {
-            resultText.text = "The notes are " + "\n" + currentRoundNotesName;
+            resultText.text = "The correct notes are " + "\n" + currentRoundNotesName;
         }
     }
 
     private IEnumerator GameOver()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         gameManager.OpenGameOverPopup();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
