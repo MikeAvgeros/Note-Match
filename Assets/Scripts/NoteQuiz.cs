@@ -66,7 +66,7 @@ public class NoteQuiz : MonoBehaviour
         quizTextPopup.Show();
         if (gameManager.level == 0 || gameManager.scale == null)
         {
-            quizText.text = "Please choose" + "\n" + "level and scale";
+            quizText.text = "You need to choose" + "\n" + "a level and a scale";
             StartCoroutine(ButtonFinder(levelSelectButton));
             return;
         }
@@ -85,11 +85,11 @@ public class NoteQuiz : MonoBehaviour
             }
             if (gameManager.level == 1)
             {
-                quizText.text = "Find the note" + "\n" + "and swipe up";
+                quizText.text = "Find the correct note" + "\n" + "and swipe it up";
             }
             else
             {
-                quizText.text = "Find the notes" + "\n" + "and swipe up";
+                quizText.text = "Find the correct notes" + "\n" + "and swipe them up";
             }
             StartCoroutine(PlayRandomNote());
             countTimer.StartTimer();
@@ -99,11 +99,11 @@ public class NoteQuiz : MonoBehaviour
             StartCoroutine(ButtonFinder(replayButton));
             if (gameManager.level == 1)
             {
-                quizText.text = "Game has started" + "\n" + "Press replay to repeat the note";
+                quizText.text = "The game has started" + "\n" + "Press replay to repeat the note";
             }
             else
             {
-                quizText.text = "Game has started" + "\n" + "Press replay to repeat the notes";
+                quizText.text = "The game has started" + "\n" + "Press replay to repeat the notes";
             }
         }
     }
@@ -241,7 +241,7 @@ public class NoteQuiz : MonoBehaviour
         {
             StartCoroutine(ButtonFinder(playButton));
             quizTextPopup.Show();
-            quizText.text = "Press play to start";
+            quizText.text = "Press the play button" + "\n" + "to start the game";
         }
     }
 
@@ -305,7 +305,7 @@ public class NoteQuiz : MonoBehaviour
     {
         foreach (NoteData currentRoundNote in currentRoundNotes)
         {
-            currentRoundNotesName += currentRoundNote.octaveName + " ";
+            currentRoundNotesName += currentRoundNote.octaveName + "\n";
         }
         resultTextPopup.Show();
         if (gameManager.level == 1)
