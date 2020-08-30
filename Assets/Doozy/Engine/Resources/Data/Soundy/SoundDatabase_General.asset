@@ -1,5 +1,34 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7968580619317156827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: NoteMatchSFX_20
+  m_EditorClassIdentifier: 
+  DatabaseName: General
+  SoundName: NoteMatchSFX_20
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: adc29a46a8e7aad4eb54c4935c2f43fa, type: 3}
+    Weight: 1
 --- !u!114 &-5347993659880035350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +237,7 @@ MonoBehaviour:
   - {fileID: 1833418401918854088}
   - {fileID: -61048682059950850}
   - {fileID: -3622730537930856391}
-  - {fileID: 4162873071727789695}
+  - {fileID: -7968580619317156827}
   - {fileID: -5347993659880035350}
 --- !u!114 &1833418401918854088
 MonoBehaviour:
@@ -266,32 +295,3 @@ MonoBehaviour:
   ResetSequenceAfterInactiveTime: 0
   SequenceResetTime: 5
   Sounds: []
---- !u!114 &4162873071727789695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
-  m_Name: NoteMatchSFX_20
-  m_EditorClassIdentifier: 
-  DatabaseName: General
-  SoundName: NoteMatchSFX_20
-  IgnoreListenerPause: 1
-  Volume:
-    MinValue: 0
-    MaxValue: 0
-  Pitch:
-    MinValue: 0
-    MaxValue: 0
-  SpatialBlend: 0
-  Loop: 0
-  Mode: 0
-  ResetSequenceAfterInactiveTime: 0
-  SequenceResetTime: 5
-  Sounds:
-  - AudioClip: {fileID: 8300000, guid: adc29a46a8e7aad4eb54c4935c2f43fa, type: 3}
-    Weight: 1
