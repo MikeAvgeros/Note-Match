@@ -97,14 +97,7 @@ public class NoteQuiz : MonoBehaviour
         else if (gameActive == true)
         {
             StartCoroutine(ButtonFinder(replayButton));
-            if (gameManager.level == 1)
-            {
-                quizText.text = "The game has started" + "\n" + "Press replay to repeat the note";
-            }
-            else
-            {
-                quizText.text = "The game has started" + "\n" + "Press replay to repeat the notes";
-            }
+            quizText.text = "The game has started" + "\n" + "Press replay to repeat";
         }
     }
 
