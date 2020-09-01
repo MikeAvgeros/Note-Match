@@ -58,6 +58,11 @@ public class PopupManager : MonoBehaviour
         OpenScaleSelection();
     }
 
+    public void CloseButtonLevelSelection()
+    {
+        StartCoroutine(CloseLevelSelectionPopup());
+    }
+
     private IEnumerator ShowScaleSelectionPopup()
     {
         yield return new WaitForSeconds(0.3f);
