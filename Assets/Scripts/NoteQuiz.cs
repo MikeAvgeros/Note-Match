@@ -180,7 +180,7 @@ public class NoteQuiz : MonoBehaviour
     private int GetIndex()
     {
         var index = currentIndex;
-        if (currentRoundNotes.Count > 1)
+        if (currentRoundNotes.Count > 1 && playedNotes > 0)
         {
             index++;
             if (index > currentRoundNotes.Count - 1)
