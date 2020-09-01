@@ -64,7 +64,7 @@ public class NoteQuiz : MonoBehaviour
         }
         resultTextPopup.Hide();
         quizTextPopup.Show();
-        if (gameManager.level == 0 || gameManager.scale == null)
+        if (gameManager.level == 0 || gameManager.scale == string.Empty)
         {
             quizText.text = "You need to choose" + "\n" + "a level and a scale";
             StartCoroutine(ButtonFinder(levelSelectButton));
