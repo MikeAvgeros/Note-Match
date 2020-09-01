@@ -71550,7 +71550,7 @@ MonoBehaviour:
   StartAlpha: 1
   AddToPopupQueue: 0
   AutoHideAfterShow: 1
-  AutoHideAfterShowDelay: 1
+  AutoHideAfterShowDelay: 2
   AutoSelectButtonAfterShow: 0
   AutoSelectPreviouslySelectedButtonAfterHide: 0
   BlockBackButton: 0
@@ -72574,7 +72574,7 @@ RectTransform:
   m_GameObject: {fileID: 1476102765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.006948138, y: 0.006948138, z: 0.006948138}
+  m_LocalScale: {x: 0.0069413884, y: 0.0069413884, z: 0.0069413884}
   m_Children:
   - {fileID: 1668417819}
   m_Father: {fileID: 0}
@@ -72712,7 +72712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -94.99994, y: 220}
+  m_AnchoredPosition: {x: -95, y: 220}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509181020
@@ -81754,7 +81754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -479.99994, y: 220}
+  m_AnchoredPosition: {x: -480, y: 220}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681758622
@@ -124045,7 +124045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289.99994, y: 220}
+  m_AnchoredPosition: {x: -290, y: 220}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080760741080735432
@@ -138049,7 +138049,7 @@ RectTransform:
   m_GameObject: {fileID: 2080760742033763322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.006948138, y: 0.006948138, z: 0.006948138}
+  m_LocalScale: {x: 0.0069413884, y: 0.0069413884, z: 0.0069413884}
   m_Children:
   - {fileID: 2027270546298325183}
   - {fileID: 3827960596516487063}
