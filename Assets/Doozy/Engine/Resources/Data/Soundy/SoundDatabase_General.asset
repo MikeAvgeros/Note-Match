@@ -207,7 +207,7 @@ MonoBehaviour:
   - {fileID: -1017257378773041929}
   - {fileID: 1833418401918854088}
   - {fileID: -61048682059950850}
-  - {fileID: 5570086969002248902}
+  - {fileID: 4808547654014770060}
   - {fileID: -7968580619317156827}
   - {fileID: -5347993659880035350}
 --- !u!114 &1833418401918854088
@@ -266,7 +266,7 @@ MonoBehaviour:
   ResetSequenceAfterInactiveTime: 0
   SequenceResetTime: 5
   Sounds: []
---- !u!114 &5570086969002248902
+--- !u!114 &4808547654014770060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
