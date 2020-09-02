@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class GameOverAudio : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class GameOverAudio : MonoBehaviour
 
     private void OnEnable()
     {
+        StartCoroutine(CheckAudio());
+    }
+
+    private IEnumerator CheckAudio()
+    {
+        yield return new WaitForSeconds(0.1f);
         if (gameManager.canPlayGOAudio == true)
         {
             if (gameManager.newBestScore == true)
