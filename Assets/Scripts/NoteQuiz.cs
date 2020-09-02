@@ -11,9 +11,9 @@ using UnityEngine.UI;
 public class NoteQuiz : MonoBehaviour
 {
     public NoteData[] notesList;
-    public static List<NoteData> playableNotes;
+    public static List<NoteData> playableNotes = new List<NoteData>();
     public static NoteData currentRoundNote;
-    public static List<NoteData> currentRoundNotes;
+    public static List<NoteData> currentRoundNotes = new List<NoteData>();
     public static List<string> currentRoundAnswerIDList = new List<string>();
     private GameManager gameManager;
     private AudioPoolManager audioPoolManager;
@@ -103,7 +103,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator ShowQuizPopup()
     {
-        if (quizTextPopup.IsVisible)
+        if (quizTextPopup.IsVisible || quizTextPopup.IsHiding)
         {
             quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
@@ -283,7 +283,7 @@ public class NoteQuiz : MonoBehaviour
         else
         {
             audioPoolManager.PlayUISound(wrongAnswer);
-            ShowCorrectAnswer();
+            GameOverText();
             StartCoroutine(GameOver());
         }
         ResetRound();
@@ -293,6 +293,12 @@ public class NoteQuiz : MonoBehaviour
     {
         resultTextPopup.Show();
         resultText.text = "Congratulations" + "\n" + "Play again";
+    }
+
+    private void GameOverText()
+    {
+        resultTextPopup.Show();
+        resultText.text = "Wrong answer :(" +"\n" + "It's Game Over";
     }
 
     private void ResetRound()
@@ -315,26 +321,9 @@ public class NoteQuiz : MonoBehaviour
         }
     }
 
-    private void ShowCorrectAnswer()
-    {
-        foreach (NoteData currentRoundNote in currentRoundNotes)
-        {
-            currentRoundNotesName += currentRoundNote.octaveName + "\n";
-        }
-        resultTextPopup.Show();
-        if (gameManager.level == 1)
-        {
-            resultText.text = "The correct note is " + "\n" + currentRoundNote.octaveName;
-        }
-        else
-        {
-            resultText.text = "The correct notes are " + "\n" + currentRoundNotesName;
-        }
-    }
-
     private IEnumerator GameOver()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         gameManager.OpenGameOverPopup();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
