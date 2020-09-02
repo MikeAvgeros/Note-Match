@@ -123,6 +123,12 @@ public class GameManager : MonoBehaviour
     public void CloseGameOverPopup()
     {
         StartCoroutine(CloseGameOver());
+        NoteQuiz.ClearNoteLists();
+    }
+
+    public void ShowNotes()
+    {
+
     }
 
     private IEnumerator CloseGameOver()

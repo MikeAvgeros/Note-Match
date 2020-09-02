@@ -40,18 +40,31 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
         }
         else
         {
-            StartCoroutine(QuizText());
+            QuizText();
         }
     }
 
-    private IEnumerator QuizText()
+    private void QuizText()
     {
-        quizTextPopup.Show();
+        StartCoroutine(ShowQuizPopup());
         quizText.text = "The note " + noteData.noteName + "\n" + "is not in " + gameManager.scale;
+    }
+
+    private IEnumerator ShowQuizPopup()
+    {
         audioPoolManager.PlayUISound(notification);
-        yield return new WaitForSeconds(2f);
-        quizTextPopup.Hide();
-        quizText.text = string.Empty;
+        if (quizTextPopup.IsVisible)
+        {
+            quizTextPopup.Hide();
+            yield return new WaitForSeconds(0.5f);
+            quizTextPopup.Show();
+        }
+        else
+        {
+            quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
+        }
     }
 
     public void OnDrag(PointerEventData eventData)

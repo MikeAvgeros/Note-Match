@@ -11,9 +11,9 @@ using UnityEngine.UI;
 public class NoteQuiz : MonoBehaviour
 {
     public NoteData[] notesList;
-    public List<NoteData> playableNotes;
+    public static List<NoteData> playableNotes;
     public static NoteData currentRoundNote;
-    public List<NoteData> currentRoundNotes;
+    public static List<NoteData> currentRoundNotes;
     public static List<string> currentRoundAnswerIDList = new List<string>();
     private GameManager gameManager;
     private AudioPoolManager audioPoolManager;
@@ -63,7 +63,7 @@ public class NoteQuiz : MonoBehaviour
             GameManager.gameHasStarted = true;
         }
         resultTextPopup.Hide();
-        quizTextPopup.Show();
+        StartCoroutine(ShowQuizPopup());
         if (gameManager.level == 0 || gameManager.scale == string.Empty)
         {
             quizText.text = "You need to choose" + "\n" + "a level and a scale";
@@ -98,6 +98,22 @@ public class NoteQuiz : MonoBehaviour
         {
             StartCoroutine(ButtonFinder(replayButton));
             quizText.text = "The game has started" + "\n" + "Press replay to repeat";
+        }
+    }
+
+    private IEnumerator ShowQuizPopup()
+    {
+        if (quizTextPopup.IsVisible)
+        {
+            quizTextPopup.Hide();
+            yield return new WaitForSeconds(0.5f);
+            quizTextPopup.Show();
+        }
+        else
+        {
+            quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
         }
     }
 
@@ -233,7 +249,7 @@ public class NoteQuiz : MonoBehaviour
         else
         {
             StartCoroutine(ButtonFinder(playButton));
-            quizTextPopup.Show();
+            StartCoroutine(ShowQuizPopup());
             quizText.text = "Press the play button" + "\n" + "to start the game";
         }
     }
@@ -248,7 +264,7 @@ public class NoteQuiz : MonoBehaviour
         }
         else
         {
-            quizTextPopup.Show();
+            StartCoroutine(ShowQuizPopup());
             quizText.text = "Replay unavailable" + "\n" + "Raise your score";
             yield return new WaitForSeconds(0.5f);
             audioPoolManager.PlayUISound(notification);
@@ -262,6 +278,7 @@ public class NoteQuiz : MonoBehaviour
             audioPoolManager.PlayUISound(correctAnswer);
             WellDoneText();
             gameManager.UpdateScore(gameManager.level * gameManager.level);
+            ClearNoteLists();
         }
         else
         {
@@ -284,6 +301,10 @@ public class NoteQuiz : MonoBehaviour
         countTimer.StopTimer();
         currentRoundAnswerIDList.Clear();
         NoteLabel.userInputList.Clear();
+    }
+
+    public static void ClearNoteLists()
+    {
         if (currentRoundNotes != null)
         {
             currentRoundNotes.Clear();
