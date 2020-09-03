@@ -144,11 +144,11 @@ public class GameManager : MonoBehaviour
     {
         foreach (NoteData currentRoundNote in NoteQuiz.currentRoundNotes)
         {
-            NoteQuiz.currentRoundNotesName += ", " + currentRoundNote.octaveName;
+            NoteQuiz.currentRoundNotesName += " " + currentRoundNote.octaveName;
         }
         if (level == 1)
         {
-            answertext.text = "The correct note was, " + NoteQuiz.currentRoundNote.octaveName;
+            answertext.text = "The correct note was " + NoteQuiz.currentRoundNote.octaveName;
         }
         else
         {
