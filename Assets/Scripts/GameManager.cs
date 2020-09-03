@@ -133,8 +133,8 @@ public class GameManager : MonoBehaviour
         UpdateBestScore();
         yield return new WaitForSeconds(0.5f);
         gameOverPopup.Hide();
-        yield return new WaitForSeconds(0.5f);
         ResetScore();
+        yield return new WaitForSeconds(0.5f);
         bestScoreImage.SetActive(false);
         lowScoreImage.SetActive(false);
         gameOverObject.SetActive(false);

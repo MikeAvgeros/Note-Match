@@ -58,6 +58,8 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
             quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
         }
         else if (quizTextPopup.IsHidden)
         {

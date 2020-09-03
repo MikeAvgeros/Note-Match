@@ -108,8 +108,10 @@ public class NoteQuiz : MonoBehaviour
             quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
         }
-        else
+        else if (quizTextPopup.IsHidden)
         {
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
