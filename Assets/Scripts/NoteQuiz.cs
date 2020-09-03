@@ -103,7 +103,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator ShowQuizPopup()
     {
-        if (quizTextPopup.IsVisible || quizTextPopup.IsHiding)
+        if (quizTextPopup.IsVisible)
         {
             quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
@@ -113,6 +113,13 @@ public class NoteQuiz : MonoBehaviour
         }
         else if (quizTextPopup.IsHidden)
         {
+            quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
+        }
+        else if (quizTextPopup.IsHiding)
+        {
+            yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
             quizTextPopup.Hide();

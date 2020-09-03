@@ -53,7 +53,7 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
     private IEnumerator ShowQuizPopup()
     {
         audioPoolManager.PlayUISound(notification);
-        if (quizTextPopup.IsVisible || quizTextPopup.IsHiding)
+        if (quizTextPopup.IsVisible)
         {
             quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
@@ -63,6 +63,13 @@ public class PlayNote : MonoBehaviour, IPointerUpHandler, IDragHandler, IEndDrag
         }
         else if (quizTextPopup.IsHidden)
         {
+            quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
+        }
+        else if (quizTextPopup.IsHiding)
+        {
+            yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
             quizTextPopup.Hide();
