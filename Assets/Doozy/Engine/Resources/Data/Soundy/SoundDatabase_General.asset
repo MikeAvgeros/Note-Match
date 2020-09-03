@@ -58,35 +58,6 @@ MonoBehaviour:
   Sounds:
   - AudioClip: {fileID: 8300000, guid: d96e3187704ea3a478ceb295b71fd693, type: 3}
     Weight: 1
---- !u!114 &-3814274305373324434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
-  m_Name: NoteMatchSFX_11
-  m_EditorClassIdentifier: 
-  DatabaseName: General
-  SoundName: NoteMatchSFX_11
-  IgnoreListenerPause: 1
-  Volume:
-    MinValue: 0
-    MaxValue: 0
-  Pitch:
-    MinValue: 0
-    MaxValue: 0
-  SpatialBlend: 0
-  Loop: 0
-  Mode: 0
-  ResetSequenceAfterInactiveTime: 0
-  SequenceResetTime: 5
-  Sounds:
-  - AudioClip: {fileID: 8300000, guid: e49c275cf36239343a51a52ece83bcf2, type: 3}
-    Weight: 1
 --- !u!114 &-2979368371076801332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,10 +177,39 @@ MonoBehaviour:
   - {fileID: -2091154988789389920}
   - {fileID: -1017257378773041929}
   - {fileID: -8013634337111103555}
-  - {fileID: -3814274305373324434}
+  - {fileID: 1846029924630598888}
   - {fileID: 2633645193948142139}
   - {fileID: 2687283463719642267}
   - {fileID: -5347993659880035350}
+--- !u!114 &1846029924630598888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: NoteMatchSFX_11
+  m_EditorClassIdentifier: 
+  DatabaseName: General
+  SoundName: NoteMatchSFX_11
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: e49c275cf36239343a51a52ece83bcf2, type: 3}
+    Weight: 1
 --- !u!114 &2633645193948142139
 MonoBehaviour:
   m_ObjectHideFlags: 0
