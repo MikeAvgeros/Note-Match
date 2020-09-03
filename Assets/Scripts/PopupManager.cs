@@ -29,15 +29,33 @@ public class PopupManager : MonoBehaviour
     {
         if (NoteQuiz.gameActive == true)
         {
-            quizTextPopup.Show();
-            quizText.text = "Can't change while game is active";
+            StartCoroutine(ShowQuizPopup());
+            quizText.text = "Can't change level/scale" + "\n" + "while the game is active";
             yield return new WaitForSeconds(0.5f);
             audioPoolManager.PlayUISound(notification);
+            yield return new WaitForSeconds(1.5f);
+            quizTextPopup.Hide();
         }
         else
         {
             yield return new WaitForSeconds(0.2f);
             levelSelectionPopup.Show();
+        }
+    }
+
+    private IEnumerator ShowQuizPopup()
+    {
+        if (quizTextPopup.IsVisible || quizTextPopup.IsHiding)
+        {
+            quizTextPopup.Hide();
+            yield return new WaitForSeconds(0.5f);
+            quizTextPopup.Show();
+        }
+        else
+        {
+            quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
         }
     }
 

@@ -8,9 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static GameManager Instance { get { return instance; } }
     public UIPopup gameOverPopup;
-    public UIPopup showAnswerPopup;
     public GameObject gameOverObject;
-    public GameObject showAnswerObject;
     public int currentScore;
     public int bestScore;
     public int level;
@@ -42,7 +40,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("level", level);
         PlayerPrefs.SetString("scale", scale);
         gameOverObject.SetActive(false);
-        showAnswerObject.SetActive(false);
     }
 
     private void CheckForBestScore()
@@ -114,6 +111,7 @@ public class GameManager : MonoBehaviour
             zeroScoreImage.SetActive(true);
         }
         scoreText.text = currentScore.ToString();
+        ShowCorrectAnswer();
     }
 
     public void OpenGameOverPopup()
@@ -142,45 +140,20 @@ public class GameManager : MonoBehaviour
         gameOverObject.SetActive(false);
     }
 
-    public void ShowAnswerPopup()
-    {
-        StartCoroutine(ShowAnswer());
-    }
-
-    private IEnumerator ShowAnswer()
-    {
-        showAnswerObject.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        ShowCorrectAnswer();
-        showAnswerPopup.Show();
-    }
-
     private void ShowCorrectAnswer()
     {
         foreach (NoteData currentRoundNote in NoteQuiz.currentRoundNotes)
         {
-            NoteQuiz.currentRoundNotesName += currentRoundNote.octaveName + "\n";
+            NoteQuiz.currentRoundNotesName += ", " + currentRoundNote.octaveName;
         }
         if (level == 1)
         {
-            answertext.text = " The correct note was " + "\n" + NoteQuiz.currentRoundNote.octaveName;
+            answertext.text = "The correct note was, " + NoteQuiz.currentRoundNote.octaveName;
         }
         else
         {
-            answertext.text = " The correct notes were " + "\n" + NoteQuiz.currentRoundNotesName;
+            answertext.text = "The correct notes were" + NoteQuiz.currentRoundNotesName;
         }
-    }
-
-    public void CloseAnswerPopup()
-    {
-        StartCoroutine(CloseAnswer());
-    }
-
-    private IEnumerator CloseAnswer()
-    {
-        showAnswerPopup.Hide();
-        yield return new WaitForSeconds(0.5f);
-        showAnswerObject.SetActive(false);
     }
 
     public void QuitApplication()
