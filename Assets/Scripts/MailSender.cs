@@ -20,7 +20,7 @@ public class MailSender : MonoBehaviour, IPointerUpHandler
     const string kSenderEmailAddress = "mizointeractive@gmail.com";
     const string kReceiverEmailAddress = "mizointeractive@gmail.com";
 
-    const string url = "https://mizointeractive.000webhostapp.com/emailer.php";
+    const string url = "https://mizo-interactive.000webhostapp.com/emailer.php";
 
     public void OnPointerUp(PointerEventData eventData)
     {

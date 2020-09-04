@@ -15,14 +15,17 @@ public class PopupManager : MonoBehaviour
     public AudioClip notification;
     public static bool changingScale = false;
     private AudioPoolManager audioPoolManager;
+    public int firstTimeOpening;
 
     private void Start()
     {
-        if (GameManager.gameHasStarted == false)
+        audioPoolManager = AudioPoolManager.instance;
+        firstTimeOpening = PlayerPrefs.GetInt("firstTimeOpening");
+        if (firstTimeOpening == 0)
         {
             OpenTutorialPopup();
+            PlayerPrefs.SetInt("firstTimeOpening", 1);
         }
-        audioPoolManager = AudioPoolManager.instance;
     }
 
     private IEnumerator ShowLevelSelectionPopup()

@@ -58,10 +58,6 @@ public class NoteQuiz : MonoBehaviour
 
     public void PlayGame()
     {
-        if (GameManager.gameHasStarted == false)
-        {
-            GameManager.gameHasStarted = true;
-        }
         resultTextPopup.Hide();
         StartCoroutine(ShowQuizPopup());
         if (gameManager.level == 0 || gameManager.scale == string.Empty)
