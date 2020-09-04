@@ -194,7 +194,7 @@ public class NoteQuiz : MonoBehaviour
 
     private void PlayNoteSequence()
     {
-        if (currentRoundNotes.Count > 0)
+        if (currentRoundNotes.Count > 0 && gameActive == true)
         {
             currentIndex = GetIndex();
             NoteData currentNote = currentRoundNotes[currentIndex];
