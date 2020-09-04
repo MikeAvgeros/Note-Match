@@ -102,6 +102,15 @@ public class NoteQuiz : MonoBehaviour
         if (quizTextPopup.IsVisible)
         {
             quizTextPopup.Hide();
+            yield return new WaitForSeconds(1f);
+            quizTextPopup.Show();
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
+        }
+        else if (quizTextPopup.IsShowing)
+        {
+            yield return new WaitForSeconds(2f);
+            quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
@@ -115,7 +124,7 @@ public class NoteQuiz : MonoBehaviour
         }
         else if (quizTextPopup.IsHiding)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
             quizTextPopup.Hide();
