@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         PlayerPrefs.SetInt("score", currentScore);
+        bestScore = PlayerPrefs.GetInt("bestscore");
         PlayerPrefs.SetInt("bestscore", bestScore);
         PlayerPrefs.SetInt("level", level);
         PlayerPrefs.SetString("scale", scale);
@@ -61,11 +62,11 @@ public class GameManager : MonoBehaviour
 
     private void UpdateBestScore()
     {
-        PlayerPrefs.SetInt("bestscore", bestScore);
         if (currentScore > bestScore)
         {
             bestScore = currentScore;
         }
+        PlayerPrefs.SetInt("bestscore", bestScore);
     }
 
     private void ResetScore()
@@ -131,8 +132,8 @@ public class GameManager : MonoBehaviour
     {
         UpdateBestScore();
         yield return new WaitForSeconds(0.5f);
-        gameOverPopup.Hide();
         ResetScore();
+        gameOverPopup.Hide();
         yield return new WaitForSeconds(0.5f);
         bestScoreImage.SetActive(false);
         lowScoreImage.SetActive(false);
@@ -157,6 +158,15 @@ public class GameManager : MonoBehaviour
 
     public void QuitApplication()
     {
+        StartCoroutine(CloseGame());
+    }
+
+    private IEnumerator CloseGame()
+    {
+        UpdateBestScore();
+        yield return new WaitForSeconds(0.4f);
+        ResetScore();
+        yield return new WaitForSeconds(0.1f);
         Application.Quit();
     }
 }
