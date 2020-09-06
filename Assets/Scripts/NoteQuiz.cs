@@ -270,19 +270,8 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator WaitAndReplay()
     {
-        if (gameManager.currentScore > 0)
-        {
-            yield return new WaitForSeconds(0.5f);
-            StartCoroutine(PlayNotes());
-            gameManager.UpdateScore(-1);
-        }
-        else
-        {
-            StartCoroutine(ShowQuizPopup());
-            quizText.text = "Replay unavailable" + "\n" + "Raise your score";
-            yield return new WaitForSeconds(0.5f);
-            audioPoolManager.PlayUISound(notification);
-        }
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(PlayNotes());
     }
 
     public void RegisterAnswer()
