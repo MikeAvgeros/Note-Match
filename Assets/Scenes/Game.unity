@@ -15358,7 +15358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to replay the note sequence
+  m_text: Press to hear the note(s) again
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4192c6e61d1e6e41b5d7e5b78391daa, type: 2}
   m_sharedMaterial: {fileID: 8639533042384238737, guid: d4192c6e61d1e6e41b5d7e5b78391daa,
@@ -45854,7 +45854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to hear a random note sequence
+  m_text: Press to start the note matching game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4192c6e61d1e6e41b5d7e5b78391daa, type: 2}
   m_sharedMaterial: {fileID: 8639533042384238737, guid: d4192c6e61d1e6e41b5d7e5b78391daa,
@@ -55423,7 +55423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How to play:'
+  m_text: HOW TO PLAY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4192c6e61d1e6e41b5d7e5b78391daa, type: 2}
   m_sharedMaterial: {fileID: 8639533042384238737, guid: d4192c6e61d1e6e41b5d7e5b78391daa,
@@ -64852,7 +64852,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.1
+        StartDelay: 0
         Duration: 0.4
       Rotate:
         AnimationType: 1
@@ -65601,7 +65601,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -260}
-  m_SizeDelta: {x: 780, y: 60}
+  m_SizeDelta: {x: 960, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317596472
 MonoBehaviour:
@@ -65622,8 +65622,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play the keyboard to figure out the note sequence and swipe up the correct
-    notes
+  m_text: Play the keyboard to figure out the note(s) and swipe up the correct ones
+    to match the melody
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4192c6e61d1e6e41b5d7e5b78391daa, type: 2}
   m_sharedMaterial: {fileID: 8639533042384238737, guid: d4192c6e61d1e6e41b5d7e5b78391daa,
@@ -112792,7 +112792,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.1
+        StartDelay: 0
         Duration: 0.4
       Rotate:
         AnimationType: 1
@@ -116222,7 +116222,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.1
+        StartDelay: 0
         Duration: 0.4
       Rotate:
         AnimationType: 1
@@ -162094,7 +162094,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.1
+        StartDelay: 0
         Duration: 0.4
       Rotate:
         AnimationType: 1
