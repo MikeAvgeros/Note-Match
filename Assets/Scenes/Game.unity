@@ -45832,7 +45832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 780, y: 0}
+  m_AnchoredPosition: {x: 750, y: 0}
   m_SizeDelta: {x: 1920, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &824573947
@@ -45854,7 +45854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to start the note matching game
+  m_text: Press to start a note match game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4192c6e61d1e6e41b5d7e5b78391daa, type: 2}
   m_sharedMaterial: {fileID: 8639533042384238737, guid: d4192c6e61d1e6e41b5d7e5b78391daa,
@@ -65622,8 +65622,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play the keyboard to figure out the note(s) and swipe up the correct ones
-    to match the melody
+  m_text: After starting the game, play the keyboard to figure out the note(s) and
+    swipe them up to win
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4192c6e61d1e6e41b5d7e5b78391daa, type: 2}
   m_sharedMaterial: {fileID: 8639533042384238737, guid: d4192c6e61d1e6e41b5d7e5b78391daa,
