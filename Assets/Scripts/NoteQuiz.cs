@@ -81,11 +81,11 @@ public class NoteQuiz : MonoBehaviour
             }
             if (gameManager.level == 1)
             {
-                quizText.text = "Find the correct note" + "\n" + "and swipe up in order";
+                quizText.text = "Find the correct note" + "\n" + "and swipe it up to win";
             }
             else
             {
-                quizText.text = "Find the correct notes" + "\n" + "and swipe up in order";
+                quizText.text = "Find the correct notes" + "\n" + "and swipe them up to win";
             }
             StartCoroutine(PlayRandomNote());
             countTimer.StartTimer();
