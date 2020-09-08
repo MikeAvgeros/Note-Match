@@ -41,7 +41,7 @@ public class PopupManager : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.15f);
             levelSelectionPopup.Show();
         }
     }
@@ -64,7 +64,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseLevelSelectionPopup()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         levelSelectionPopup.Hide();
     }
 
@@ -86,13 +86,13 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator ShowScaleSelectionPopup()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         scaleSelectionPopup.Show();
     }
 
     private IEnumerator CloseScaleSelectionPopup()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         scaleSelectionPopup.Hide();
     }
 
@@ -116,7 +116,7 @@ public class PopupManager : MonoBehaviour
     private IEnumerator OpenContactUs()
     {
         contactUsMessage.text = "We want to hear your feedback";
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         contactUsPopup.Show();
     }
 
@@ -127,7 +127,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseContactUs()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         contactUsPopup.Hide();
     }
 
@@ -138,7 +138,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator OpenTutorial()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         tutorialPopup.Show();
     }
 
@@ -149,7 +149,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator CloseTutorial()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         tutorialPopup.Hide();
     }
 }

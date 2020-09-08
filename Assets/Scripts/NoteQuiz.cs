@@ -102,14 +102,14 @@ public class NoteQuiz : MonoBehaviour
         if (quizTextPopup.IsVisible)
         {
             quizTextPopup.Hide();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
             quizTextPopup.Hide();
         }
         else if (quizTextPopup.IsShowing)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1.5f);
             quizTextPopup.Hide();
             yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
@@ -124,7 +124,7 @@ public class NoteQuiz : MonoBehaviour
         }
         else if (quizTextPopup.IsHiding)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             quizTextPopup.Show();
             yield return new WaitForSeconds(2f);
             quizTextPopup.Hide();
@@ -162,7 +162,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator PlayRandomNote()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         if (playableNotes.Count > 0 && currentRoundAnswerIDList.Count == 0)
         {
             GameActive();
@@ -270,7 +270,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator WaitAndReplay()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         StartCoroutine(PlayNotes());
     }
 
