@@ -1224,7 +1224,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -8708,7 +8708,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -13846,7 +13846,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -16715,7 +16715,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -19182,7 +19182,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -21075,6 +21075,7 @@ GameObject:
   - component: {fileID: 260165936}
   - component: {fileID: 260165935}
   - component: {fileID: 260165934}
+  - component: {fileID: 260165938}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -21984,9 +21985,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 0
+        SoundSource: 1
         DatabaseName: General
-        SoundName: NoteMatchSFX_20
+        SoundName: 
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -22015,7 +22016,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.2
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -23485,6 +23486,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260165932}
   m_CullTransparentMesh: 0
+--- !u!114 &260165938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260165932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa92e03894611c4b9b1cde16ac43c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: adc29a46a8e7aad4eb54c4935c2f43fa, type: 3}
 --- !u!1 &269899266
 GameObject:
   m_ObjectHideFlags: 0
@@ -26929,7 +26943,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -30917,6 +30931,7 @@ GameObject:
   - component: {fileID: 293676944}
   - component: {fileID: 293676943}
   - component: {fileID: 293676942}
+  - component: {fileID: 293676947}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -31841,9 +31856,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 0
+        SoundSource: 1
         DatabaseName: General
-        SoundName: NoteMatchSFX_20
+        SoundName: 
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -31872,7 +31887,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.2
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -33342,6 +33357,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293676940}
   m_CullTransparentMesh: 0
+--- !u!114 &293676947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293676940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa92e03894611c4b9b1cde16ac43c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: adc29a46a8e7aad4eb54c4935c2f43fa, type: 3}
 --- !u!1 &298780414
 GameObject:
   m_ObjectHideFlags: 0
@@ -44398,7 +44426,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -46985,7 +47013,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -53861,7 +53889,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -63098,7 +63126,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -79136,7 +79164,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -98709,6 +98737,7 @@ GameObject:
   - component: {fileID: 1962318806}
   - component: {fileID: 1962318805}
   - component: {fileID: 1962318804}
+  - component: {fileID: 1962318808}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -99618,9 +99647,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 0
+        SoundSource: 1
         DatabaseName: General
-        SoundName: NoteMatchSFX_20
+        SoundName: 
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -99649,7 +99678,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.2
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -101119,6 +101148,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962318802}
   m_CullTransparentMesh: 0
+--- !u!114 &1962318808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962318802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa92e03894611c4b9b1cde16ac43c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: adc29a46a8e7aad4eb54c4935c2f43fa, type: 3}
 --- !u!1 &1970291167
 GameObject:
   m_ObjectHideFlags: 0
@@ -102088,7 +102130,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -114166,7 +114208,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -117826,7 +117868,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -120211,7 +120253,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -122984,7 +123026,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -125451,7 +125493,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -127793,7 +127835,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -130560,7 +130602,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -133267,7 +133309,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -135072,6 +135114,7 @@ GameObject:
   - component: {fileID: 2080760741442030756}
   - component: {fileID: 2080760741442030757}
   - component: {fileID: 2080760741442030760}
+  - component: {fileID: 2080760741442030761}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -136015,9 +136058,9 @@ MonoBehaviour:
           m_Calls: []
       GameEvents: []
       SoundData:
-        SoundSource: 0
+        SoundSource: 1
         DatabaseName: General
-        SoundName: NoteMatchSFX_20
+        SoundName: 
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
     PresetCategory: Organic
@@ -136046,7 +136089,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.2
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -137477,6 +137520,19 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &2080760741442030761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080760741442030755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa92e03894611c4b9b1cde16ac43c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: adc29a46a8e7aad4eb54c4935c2f43fa, type: 3}
 --- !u!224 &2080760741521045398
 RectTransform:
   m_ObjectHideFlags: 0
@@ -139273,7 +139329,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -141949,7 +142005,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -145065,7 +145121,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -147682,7 +147738,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -150203,7 +150259,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -152806,7 +152862,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -155350,7 +155406,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -157876,7 +157932,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -160284,7 +160340,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -164994,7 +165050,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0

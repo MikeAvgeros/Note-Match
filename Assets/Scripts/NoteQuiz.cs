@@ -162,7 +162,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator PlayRandomNote()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         if (playableNotes.Count > 0 && currentRoundAnswerIDList.Count == 0)
         {
             GameActive();
@@ -270,7 +270,7 @@ public class NoteQuiz : MonoBehaviour
 
     private IEnumerator WaitAndReplay()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         StartCoroutine(PlayNotes());
     }
 
