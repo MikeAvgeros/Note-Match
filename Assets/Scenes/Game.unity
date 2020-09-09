@@ -328,7 +328,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -784,19 +784,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -810,16 +810,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -832,15 +832,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -853,12 +853,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -1176,7 +1176,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -2601,7 +2601,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &10285093
 MonoBehaviour:
@@ -7812,7 +7812,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -8246,7 +8246,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -8268,19 +8268,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -8294,16 +8294,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -8316,15 +8316,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -8337,12 +8337,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -8660,7 +8660,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -10085,7 +10085,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &65234762
 MonoBehaviour:
@@ -12950,7 +12950,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -13384,7 +13384,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -13406,19 +13406,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -13432,16 +13432,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -13454,15 +13454,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -13475,12 +13475,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -13798,7 +13798,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -15223,7 +15223,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &143837415
 MonoBehaviour:
@@ -15819,7 +15819,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -16253,7 +16253,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -16275,19 +16275,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -16301,16 +16301,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -16323,15 +16323,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -16344,12 +16344,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -16667,7 +16667,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -18092,7 +18092,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &198420165
 MonoBehaviour:
@@ -18286,7 +18286,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -18720,7 +18720,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -18742,19 +18742,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -18768,16 +18768,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -18790,15 +18790,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -18811,12 +18811,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -19134,7 +19134,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -20559,7 +20559,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &199612971
 MonoBehaviour:
@@ -21120,7 +21120,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -21554,7 +21554,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -21576,19 +21576,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -21602,16 +21602,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -21624,15 +21624,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -21645,12 +21645,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -21968,7 +21968,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -22016,7 +22016,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.2
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -26047,7 +26047,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -26481,7 +26481,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -26503,19 +26503,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -26529,16 +26529,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -26551,15 +26551,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -26572,12 +26572,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -26895,7 +26895,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -28320,7 +28320,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &273727949
 MonoBehaviour:
@@ -30991,7 +30991,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -31425,7 +31425,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -31447,19 +31447,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -31473,16 +31473,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -31495,15 +31495,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -31516,12 +31516,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -31839,7 +31839,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -31887,7 +31887,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.2
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -43964,7 +43964,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -43986,19 +43986,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -44012,16 +44012,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -44034,15 +44034,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -44055,12 +44055,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -44378,7 +44378,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -45803,7 +45803,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &814479574
 MonoBehaviour:
@@ -46117,7 +46117,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -46551,7 +46551,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -46573,19 +46573,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -46599,16 +46599,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -46621,15 +46621,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -46642,12 +46642,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -46965,7 +46965,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -52993,7 +52993,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -53427,7 +53427,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -53449,19 +53449,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -53475,16 +53475,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -53497,15 +53497,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -53518,12 +53518,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -53841,7 +53841,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -62230,7 +62230,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -62664,7 +62664,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -62686,19 +62686,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -62712,16 +62712,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -62734,15 +62734,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -62755,12 +62755,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -63078,7 +63078,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -64503,7 +64503,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &1257816303
 MonoBehaviour:
@@ -75377,7 +75377,7 @@ RectTransform:
   m_GameObject: {fileID: 1476102765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0069413884, y: 0.0069413884, z: 0.0069413884}
+  m_LocalScale: {x: 0.009266108, y: 0.009266108, z: 0.009266108}
   m_Children:
   - {fileID: 1668417819}
   m_Father: {fileID: 0}
@@ -75386,7 +75386,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 0}
+  m_SizeDelta: {x: 1919.9998, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476102771
 MonoBehaviour:
@@ -78268,7 +78268,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -78702,7 +78702,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -78724,19 +78724,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -78750,16 +78750,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -78772,15 +78772,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -78793,12 +78793,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -79116,7 +79116,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -80541,7 +80541,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &1548811040
 MonoBehaviour:
@@ -98782,7 +98782,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -99216,7 +99216,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -99238,19 +99238,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -99264,16 +99264,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -99286,15 +99286,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -99307,12 +99307,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -99630,7 +99630,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -99678,7 +99678,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.2
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -101234,7 +101234,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -101668,7 +101668,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -101690,19 +101690,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -101716,16 +101716,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -101738,15 +101738,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -101759,12 +101759,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -102082,7 +102082,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -103507,7 +103507,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &1970291171
 MonoBehaviour:
@@ -113312,7 +113312,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -113746,7 +113746,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -113768,19 +113768,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -113794,16 +113794,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -113816,15 +113816,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -113837,12 +113837,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -114160,7 +114160,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -115585,7 +115585,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760740560079961
 MonoBehaviour:
@@ -116972,7 +116972,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -117406,7 +117406,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -117428,19 +117428,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -117454,16 +117454,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -117476,15 +117476,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -117497,12 +117497,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -117820,7 +117820,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -119245,7 +119245,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760740711860542
 CanvasRenderer:
@@ -119357,7 +119357,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -119791,7 +119791,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -119813,19 +119813,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -119839,16 +119839,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -119861,15 +119861,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -119882,12 +119882,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -120205,7 +120205,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -121630,7 +121630,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760740771896493
 MonoBehaviour:
@@ -122130,7 +122130,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -122564,7 +122564,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -122586,19 +122586,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -122612,16 +122612,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -122634,15 +122634,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -122655,12 +122655,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -122978,7 +122978,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -124403,7 +124403,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760740988354918
 CanvasRenderer:
@@ -124597,7 +124597,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -125031,7 +125031,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -125053,19 +125053,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -125079,16 +125079,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -125101,15 +125101,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -125122,12 +125122,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -125445,7 +125445,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -126870,7 +126870,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760740988723722
 CanvasRenderer:
@@ -126939,7 +126939,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -127373,7 +127373,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -127395,19 +127395,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -127421,16 +127421,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -127443,15 +127443,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -127464,12 +127464,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -127787,7 +127787,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -129212,7 +129212,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760741012177473
 MonoBehaviour:
@@ -129706,7 +129706,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -130140,7 +130140,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -130162,19 +130162,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -130188,16 +130188,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -130210,15 +130210,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -130231,12 +130231,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -130554,7 +130554,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -131979,7 +131979,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760741145535769
 MonoBehaviour:
@@ -132413,7 +132413,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -132847,7 +132847,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -132869,19 +132869,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -132895,16 +132895,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -132917,15 +132917,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -132938,12 +132938,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -133261,7 +133261,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -134686,7 +134686,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760741290485693
 MonoBehaviour:
@@ -135193,7 +135193,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -135627,7 +135627,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -135649,19 +135649,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -135675,16 +135675,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -135697,15 +135697,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -135718,12 +135718,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -136041,7 +136041,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -136089,7 +136089,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.2
+        Duration: 0.3
       Rotate:
         AnimationType: 4
         Enabled: 0
@@ -138433,7 +138433,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -138867,7 +138867,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -138889,19 +138889,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -138915,16 +138915,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -138937,15 +138937,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -138958,12 +138958,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -139281,7 +139281,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -140706,7 +140706,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760741874408475
 MonoBehaviour:
@@ -141543,7 +141543,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -141565,19 +141565,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -141591,16 +141591,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -141613,15 +141613,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -141634,12 +141634,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -141957,7 +141957,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -143382,7 +143382,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760742009899856
 CanvasRenderer:
@@ -143546,7 +143546,7 @@ RectTransform:
   m_GameObject: {fileID: 2080760742033763322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0069413884, y: 0.0069413884, z: 0.0069413884}
+  m_LocalScale: {x: 0.009266108, y: 0.009266108, z: 0.009266108}
   m_Children:
   - {fileID: 2027270546298325183}
   - {fileID: 3827960596516487063}
@@ -143564,7 +143564,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 0}
+  m_SizeDelta: {x: 1919.9998, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2080760742033763322
 GameObject:
@@ -144225,7 +144225,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -144659,7 +144659,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -144681,19 +144681,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -144707,16 +144707,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -144729,15 +144729,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -144750,12 +144750,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -145073,7 +145073,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -146498,7 +146498,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760742147221232
 CanvasRenderer:
@@ -146842,7 +146842,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -147276,7 +147276,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -147298,19 +147298,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -147324,16 +147324,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -147346,15 +147346,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -147367,12 +147367,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -147690,7 +147690,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -149115,7 +149115,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &2080760742221827859
 MonoBehaviour:
@@ -149797,7 +149797,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -149819,19 +149819,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -149845,16 +149845,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -149867,15 +149867,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -149888,12 +149888,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -150211,7 +150211,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -151636,7 +151636,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760742295298830
 CanvasRenderer:
@@ -152400,7 +152400,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -152422,19 +152422,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -152448,16 +152448,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -152470,15 +152470,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -152491,12 +152491,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -152814,7 +152814,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -154239,7 +154239,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760742386360964
 CanvasRenderer:
@@ -154510,7 +154510,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -154944,7 +154944,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -154966,19 +154966,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -154992,16 +154992,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -155014,15 +155014,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -155035,12 +155035,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -155358,7 +155358,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -156783,7 +156783,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!224 &2080760742483547529
 RectTransform:
@@ -157036,7 +157036,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -157470,7 +157470,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -157492,19 +157492,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -157518,16 +157518,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -157540,15 +157540,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -157561,12 +157561,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -157884,7 +157884,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -159309,7 +159309,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!222 &2080760742487331638
 CanvasRenderer:
@@ -159444,7 +159444,7 @@ MonoBehaviour:
   StartRotation: {x: 0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AllowMultipleClicks: 1
+  AllowMultipleClicks: 0
   ButtonCategory: General
   ButtonName: Unnamed
   ClickMode: 0
@@ -159878,7 +159878,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -159900,19 +159900,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -159926,16 +159926,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -159948,15 +159948,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -159969,12 +159969,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -160292,7 +160292,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -161717,7 +161717,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!224 &2080760742592756505
 RectTransform:
@@ -164588,7 +164588,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0
-    Enabled: 0
+    Enabled: 1
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -164610,19 +164610,19 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Uncategorized
-    PresetName: Default
+    PresetCategory: Organic
+    PresetName: HeavyJumpDown
     PunchAnimation:
       AnimationType: 4
       Move:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: -10, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 8
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         Direction: 0
@@ -164636,16 +164636,16 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Rotate:
         AnimationType: 4
         Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: -5}
         UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
+        Vibrato: 4
+        Elasticity: 0.5
         NumberOfLoops: -1
         LoopType: 1
         RotateMode: 1
@@ -164658,15 +164658,15 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.3
       Scale:
         AnimationType: 4
-        Enabled: 0
+        Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
+        By: {x: 0.15, y: -0.15, z: 0}
         UseCustomFromAndTo: 0
-        Vibrato: 10
+        Vibrato: 8
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
@@ -164679,12 +164679,12 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 1
+        Duration: 0.4
       Fade:
         AnimationType: 4
         Enabled: 0
         From: 0
-        To: 0
+        To: 1
         By: 0.5
         UseCustomFromAndTo: 0
         NumberOfLoops: -1
@@ -165002,7 +165002,7 @@ MonoBehaviour:
     ButtonAnimationType: 0
     DeselectButton: 0
     DisableInterval: 0.4
-    Enabled: 1
+    Enabled: 0
     LoadSelectedPresetAtRuntime: 0
     OnTrigger:
       AnimatorEvents: []
@@ -166427,7 +166427,7 @@ MonoBehaviour:
     LoadSelectedPresetAtRuntime: 0
     PresetCategory: 
     PresetName: 
-  TargetLabel: 1
+  TargetLabel: 0
   TextLabel: {fileID: 0}
 --- !u!114 &3827960596528613378
 MonoBehaviour:
