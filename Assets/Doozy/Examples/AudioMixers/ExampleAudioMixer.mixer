@@ -121,6 +121,7 @@ AudioMixerGroupController:
   - {fileID: 24400004}
   - {fileID: -4779040718667623580}
   - {fileID: -5751445284214307393}
+  - {fileID: 8800676284277952124}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -151,6 +152,7 @@ AudioMixerSnapshotController:
   m_FloatValues:
     c842ae407efcd2a43a294a4f5a75e7ea: 0
     d07a1680fc069dc42bae38c92edfe342: 0.9
+    b6da8fe09df2b9d428b7dd71674b2621: 200
     25eb6c116af923d4bb3e513f47df5501: 1200
     ab0e402101ab00a45845b8a2d5355cec: 1.2
     6813a481d239db141a7621d001015088: 0.85
@@ -173,6 +175,7 @@ AudioMixerSnapshotController:
     71f666c95cb584e479e181989d7bddb1: 0
     402211e98c02cf74ea626a0b913794ca: 10000
     6fccd25a4837a674da572c0080ffcebd: -18
+    3539339b2e01a1f438183802f48fe7aa: 1.1
     2c5fa99b78a069c4c8154744c287915d: 0
     e970fbcc13ff58f4ba9553b6853c091f: 3.54
     3e1fedfc46b2ba444ab3f6f5090f0407: -5
@@ -291,3 +294,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &8800676284277952124
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: adeeff72e1ea9714ab53fd3d8ad5de04
+  m_EffectName: ParamEQ
+  m_MixLevel: 1457401f1116420418455c055dce86b9
+  m_Parameters:
+  - m_ParameterName: Center freq
+    m_GUID: b6da8fe09df2b9d428b7dd71674b2621
+  - m_ParameterName: Octave range
+    m_GUID: 80cd3527c29652b4d8784206fb833eeb
+  - m_ParameterName: Frequency gain
+    m_GUID: 3539339b2e01a1f438183802f48fe7aa
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
